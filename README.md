@@ -4,9 +4,6 @@ This is a repo for [CLARIAH Fellowship Call 2021](https://www.clariah.nl/news/cl
 
 [Proposal Accepted](files/CLARIAH-F-2021_paper.pdf)
 
-
-
-
 ---
 
 ## Abstract
