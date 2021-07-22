@@ -16,9 +16,10 @@ We will connect our dataset — that is the world’s most comprehensive dataset
 PLAYFAIR will tackle the challenge of developing an LD workflow using CLARIAH, show the power of the Semantic Web to answering a research question, and enhance data published on the Web in any applications of digital humanities.
 
 
----
 ## License
 
 **Copyright (C) 2021, CLARIAH-PLUS WP1: CP-21-F-I 5**
 
 MIT License 
+
+---
