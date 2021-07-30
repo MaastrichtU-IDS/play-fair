@@ -1,0 +1,31 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix asf: <http://projects.apache.org/ns/asfext#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+
+<https://w3id.org/um/ids/projects#play-fair>
+  a doap:Project ;
+  doap:name "PLAY FAIR" ;
+  doap:description '''FAIR Data for Historical Games''' ;
+  bibo:status "Active" ;
+
+  doap:programming-language "Python", "JavaScript" ;
+  doap:license <https://opensource.org/licenses/MIT> ;
+  doap:created "2021-6-30"^^xsd:date ;
+  doap:bug-database <https://github.com/MaastrichtU-IDS/play-fair/issues> ;
+  doap:homepage <https://github.com/MaastrichtU-IDS/play-fair> ;
+  
+  
+  
+  
+  doap:category "Research" ;
+  doap:repository [
+    a doap:GitRepository ;
+    doap:location <https://github.com/MaastrichtU-IDS/play-fair> ;
+  ] ;
+  doap:maintainer [
+    a foaf:Person ;
+    foaf:name "Carlos Utrilla Guerrero", "Vincent Emonet" ;
+    foaf:mbox <mailto:c.utrillaguerrero@maastrichtuniversity.nl>, <vincent.emonet@maastrichtuniversity.nl>
+  ] .
