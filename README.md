@@ -16,17 +16,49 @@ PLAYFAIR will tackle the challenge of developing an LD workflow using CLARIAH, s
 
 
 
-## Start workspace
+### Start workspace
 
-Start the workspace to run mappings to convert Ludeme data to RDF.
-
-Run this command in the folder you want to see in the VSCode interface (the root of this repository):
+Start the workspace to run mappings to convert Ludeme data to RDF on DSRI:
 
 ```bash
-docker run --rm -it -p 8080:8080 -e PASSWORD=password -v $(pwd):/home/coder/project ghcr.io/maastrichtu-ids/fair-workspace:latest
+oc new-app vscode-root -p APPLICATION_NAME=vscode \
+  -p GIT_URL=https://github.com/MaastrichtU-IDS/play-fair \
+  -p STORAGE_SIZE=10Gi \
+  -p PASSWORD=CHANGEME
 ```
 
+Delete the VSCode on DSRI:
 
+```bash
+oc delete all,secret,pvc,configmaps,serviceaccount,rolebinding --selector app=vscode
+```
+
+To run locally, you can use docker, run this command in the folder you want to see in the VSCode interface (the root of this repository):
+
+```bash
+docker run --rm -it -p 8080:8080 -e PASSWORD=password -e GIT_URL= -v $(pwd):/home/coder/project ghcr.io/maastrichtu-ids/code-server:latest
+```
+
+### Start database
+
+MariaDB on DSRI.
+
+```bash
+oc new-app mariadb-persistent -p DATABASE_SERVICE_NAME=mariadb \
+  -p MYSQL_USER=mariadb \
+  -p MYSQL_PASSWORD=ludiluda \
+  -p MYSQL_ROOT_PASSWORD=ludiluda \
+  -p MYSQL_DATABASE=ludiiGames \
+  -p MARIADB_VERSION=10.3-el8 \
+  -p VOLUME_CAPACITY=10Gi \
+  -p MEMORY_LIMIT=2Gi
+```
+
+Delete the database on DSRI:
+
+```bash
+oc delete all,secret,pvc,configmaps,serviceaccount,rolebinding --selector template=mariadb-persistent-template
+```
 
 ## License
 
@@ -35,3 +67,4 @@ docker run --rm -it -p 8080:8080 -e PASSWORD=password -v $(pwd):/home/coder/proj
 MIT License 
 
 ---
+

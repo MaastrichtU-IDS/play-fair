@@ -1,0 +1,45 @@
+prefixes:
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  rr: "http://www.w3.org/ns/r2rml#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  grel: "http://users.ugent.be/~bjdmeest/function/grel.ttl#"
+  idlab: "http://example.com/idlab/function/"
+  idsf: "https://w3id.org/um/ids/rmlfunctions.ttl#"
+  pubmed: "https://identifiers.org/pubmed:"
+  schema: "https://schema.org/"
+  sio: "http://semanticscience.org/resource/"
+  ludeme: "https://w3id.org/ludeme/"
+
+authors:
+  - Carlos
+  - Vincent Emonet <vincent.emonet@gmail.com>
+
+mappings:
+  games:
+    sources:
+      - access: "mariadb:5433/ludiiGames"
+        type: mysql
+        credentials:
+          username: mariadb
+          password: ludiluda
+        queryFormulation: sql2008
+        query: |
+          select pdb.struct_id,structures.name,pdb.pdb, pdb.chain_id,pdb.ligand_id,pdb.accession,
+                target_component.gene
+          from pdb,structures,act_table_full,td2tc,target_component where
+            pdb.struct_id = structures.id and
+            pdb.struct_id = act_table_full.struct_id
+            and act_table_full.moa = 1
+            and act_table_full.target_id = td2tc.target_id
+            and td2tc.component_id = target_component.id
+            and target_component.accession = pdb.accession;
+        referenceFormulation: csv
+
+    s: ludeme:game/$(pdb)-$(accession)
+    po:
+      - [a, schema:Game]
+
+      - [rdf:subject, pdb:$(pdb)~iri]
+      - [rdf:object, uniprot:$(accession)~iri]
+      - [rdf:predicate, sio:toInteractWith~iri]
