@@ -14,8 +14,6 @@ PLAYFAIR will tackle the challenge of developing an LD workflow using CLARIAH, s
 
 ## Documentation
 
-
-
 ### Start workspace
 
 Start the workspace to run mappings to convert Ludeme data to RDF on DSRI:
@@ -41,7 +39,7 @@ docker run --rm -it -p 8080:8080 -e PASSWORD=password -e GIT_URL= -v $(pwd):/hom
 
 ### Start database
 
-MariaDB on DSRI.
+MariaDB on DSRI (5.5.68-MariaDB.
 
 ```bash
 oc new-app mariadb-persistent -p DATABASE_SERVICE_NAME=mariadb \
@@ -58,6 +56,30 @@ Delete the database on DSRI:
 
 ```bash
 oc delete all,secret,pvc,configmaps,serviceaccount,rolebinding --selector template=mariadb-persistent-template
+```
+
+Try starting [MariaDB 5.5 with Helm](https://github.com/bitnami/charts/blob/master/bitnami/mariadb/values.yaml):
+
+```bash
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm repo update
+```
+
+Start MariaDB 5.5:
+
+```bash
+helm install mariadb bitnami/mariadb \
+    --set image.tag="5.5.48-0-r01" \
+    --set serviceAccount.name=anyuid,serviceAccount.create=false \
+    --set rbac.create=true,volumePermissions.enabled=true \
+    --set auth.rootPassword=ludiluda,auth.database=ludiiGames \
+    --set auth.username=mariadb,auth.password=ludiluda
+```
+
+Uninstall MariaDB 5.5:
+
+```bash
+helm uninstall mariadb
 ```
 
 ## License
