@@ -1,18 +1,20 @@
 # Module Imports
-import mysql.connector as mysql
+# import mysql.connector as mysql
+import pymysql.cursors
 import sys
 # Connect to MariaDB Platform
-try:
-    conn = mysql.connect(
-        user="mariadb",
-        password="ludiluda",
-        host='mariadb',
-        port=3306,
-        database="ludiiGames"
-    )
-except:
-    print(f"Error connecting to MariaDB database")
-    sys.exit(1)
+# try:
+conn = pymysql.connect(
+    user="root",
+    password="newpassword",
+    host='localhost',
+    port=3306,
+    database="test-ludeme",
+    cursorclass=pymysql.cursors.DictCursor
+)
+# except mysql.Error as e:
+#     print(f"Error connecting to MariaDB database {e}")
+#     sys.exit(1)
 
 if conn.is_connected():
     db_Info = conn.get_server_info()
@@ -28,7 +30,7 @@ if conn.is_connected():
 
 try:
     print('Loading the .sql file in the MariaDB database')
-    with open('data/database/ludiiGames.sql', 'r') as f:
+    with open('data/ludiiGames.sql', 'r') as f:
         cursor.execute(f.read(), multi=True)
         print('SQL file executed, now commiting')
         conn.commit()
