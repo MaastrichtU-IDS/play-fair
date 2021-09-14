@@ -76,66 +76,31 @@ docker run --rm -it -p 8080:8080 -e PASSWORD=password -e GIT_URL= -v $(pwd):/hom
 
 ### Start database
 
-MariaDB on DSRI (5.5.68-MariaDB) using OpenShift template:
-
-```bash
-oc new-app mariadb-persistent -p DATABASE_SERVICE_NAME=mariadb \
-  -p MYSQL_USER=mariadb \
-  -p MYSQL_PASSWORD=ludiluda \
-  -p MYSQL_ROOT_PASSWORD=ludiluda \
-  -p MYSQL_DATABASE=ludiiGames \
-  -p MARIADB_VERSION=10.3-el8 \
-  -p VOLUME_CAPACITY=10Gi \
-  -p MEMORY_LIMIT=2Gi
-```
-
-Delete the database on DSRI:
-
-```bash
-oc delete all,secret,pvc,configmaps,serviceaccount,rolebinding --selector template=mariadb-persistent-template
-```
-
-Try starting [MariaDB 5.5 with Helm](https://github.com/bitnami/charts/blob/master/bitnami/mariadb/values.yaml):
+Install MySQL with Helm:
 
 ```bash
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 ```
 
-Start MariaDB 5.5:
-
-```bash
-helm install mariadb bitnami/mariadb \
-    --set image.tag="5.5.48-0-r01" \
-    --set serviceAccount.name=anyuid,serviceAccount.create=false \
-    --set rbac.create=true,volumePermissions.enabled=true \
-    --set auth.rootPassword=ludiluda,auth.database=ludiiGames \
-    --set auth.username=mariadb,auth.password=ludiluda
-    
-    initdbScripts:
-##   my_init_script.sh: |
-##      #!/bin/bash
-##      echo "Do something."
-```
-
-Using the config values file:
+Deploy MySQL in your DSRI project, this will automatically load the `ludiiGames` database, using the `values.yaml` file in this repository (feel free to adapt it for a different database):
 
 ```bash
 helm install mysql bitnami/mysql -f mysql-helm-values.yaml
 ```
 
-Forward the service to access it on http://localhost:3306
+Forward the service to access it on your laptop at http://localhost:3306
 
 ```bash
 oc port-forward svc/mysql 3306
 ```
 
-You can now use your favorite tool to explore the database, we recommend to use the database administration tool [DBeaver](https://dbeaver.io/).
+You can now use your favorite tool to connect and explore the database, if you don't know which one to use we recommend to use the database administration tool [DBeaver](https://dbeaver.io/).
 
-Uninstall MariaDB 5.5:
+Delete MySQL deployment:
 
 ```bash
-helm uninstall mariadb
+helm uninstall mysql
 ```
 
 ## License

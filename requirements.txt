@@ -1,3 +1,4 @@
+cow-csvw
 mysql-connector-python
 #psycopg2
 #mariadb
