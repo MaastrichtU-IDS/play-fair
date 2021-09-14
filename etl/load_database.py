@@ -5,7 +5,7 @@ import sys
 # Connect to MariaDB Platform
 # try:
 conn = pymysql.connect(
-    user="root",
+    user="carlos",
     password="newpassword",
     host='localhost',
     port=3306,

@@ -1,6 +1,7 @@
 prefixes:
   rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  dc: "http://purl.org/dc/elements/1.1/"
   rr: "http://www.w3.org/ns/r2rml#"
   xsd: "http://www.w3.org/2001/XMLSchema#"
   grel: "http://users.ugent.be/~bjdmeest/function/grel.ttl#"
@@ -15,31 +16,46 @@ authors:
   - Carlos
   - Vincent Emonet <vincent.emonet@gmail.com>
 
+# Original game URL: https://ludii.games/identifier.php?Id=DLP.Games.426
+# Original evidence URL: https://ludii.games/identifier.php?Id=DLP.Evidence.1426
+
 mappings:
   games:
     sources:
-      - access: "mariadb:5433/ludiiGames"
+      - access: " localhost:3307/ludiiGames"
         type: mysql
         credentials:
-          username: mariadb
-          password: ludiluda
+          username: root
+          password: newpassword
         queryFormulation: sql2008
-        query: |
-          select pdb.struct_id,structures.name,pdb.pdb, pdb.chain_id,pdb.ligand_id,pdb.accession,
-                target_component.gene
-          from pdb,structures,act_table_full,td2tc,target_component where
-            pdb.struct_id = structures.id and
-            pdb.struct_id = act_table_full.struct_id
-            and act_table_full.moa = 1
-            and act_table_full.target_id = td2tc.target_id
-            and td2tc.component_id = target_component.id
-            and target_component.accession = pdb.accession;
+        query: | 
+          SELECT Id, Name, Description FROM Games 
         referenceFormulation: csv
 
-    s: ludeme:game/$(pdb)-$(accession)
+    s: ludeme:game/$(Id)
     po:
       - [a, schema:Game]
+      - [rdfs:label, $(Name)]
+      - [dc:description, $(Description)]
 
-      - [rdf:subject, pdb:$(pdb)~iri]
-      - [rdf:object, uniprot:$(accession)~iri]
-      - [rdf:predicate, sio:toInteractWith~iri]
+  evidences:
+    sources:
+      - access: " localhost:3307/ludiiGames"
+        type: mysql
+        credentials:
+          username: root
+          password: newpassword
+        queryFormulation: sql2008
+        query: | 
+          SELECT * FROM Evidence
+        referenceFormulation: csv
+
+    s: ludeme:evidence/$(Id)
+    po:
+      - [a, schema:Evidence]
+      - [rdfs:label, $(Misc)]
+      - [dc:description, $(Rules)]
+      - [ludeme:evidenceForGame, ludeme:game/$(GameId)]
+      - [ludeme:geoloc, $(Location)]
+      - [ludeme:dateStart, $(DateStart)]
+      - [ludeme:dateEnd, $(DateEnd)]

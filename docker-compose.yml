@@ -1,0 +1,14 @@
+version: "3"
+
+services: 
+    mysql: 
+        build: .
+        ports: 
+            - 3307:3306
+
+    # code-server: 
+    #     image: ghcr.io/maastrichu-ids/code-server
+    #     ports: 
+    #         - 8080:8080
+    #     volumes:
+    #         - .:/home/coder

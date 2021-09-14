@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Script to download and load to DSRI
+
 wget -N -P data/ https://ludii.games/downloads/database.zip
 
 APP_NAME="${1:-vscode}"

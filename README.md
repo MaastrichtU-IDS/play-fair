@@ -12,7 +12,45 @@ The ERC-Digital Ludeme Project (DLP) is constructing a database of historical ev
 We will connect our dataset — that is the world’s most comprehensive dataset on Ancient games — with others, to make a universally FAIR to everyone, and find sources for additional data to complete our own set.
 PLAYFAIR will tackle the challenge of developing an LD workflow using CLARIAH, show the power of the Semantic Web to answering a research question, and enhance data published on the Web in any applications of digital humanities.
 
+## Data 
+
+Ancient game in Louvre: https://collections.louvre.fr/ark:/53355/cl010006455
+
 ## Documentation
+
+### Install locally
+
+Install dependencies:
+
+```bash
+yarn global add @rmlio/yarrrml-parser
+wget https://github.com/RMLio/rmlmapper-java/releases/download/v4.12.0/rmlmapper.jar
+pip install cow-csvw
+```
+
+### Run RML mapper
+
+```powershell
+cd etl
+.\run.ps1
+```
+
+### Run CoW
+
+Export the games table to a `games.csv` file
+
+Generate the metadata file with CSVw mappings:
+
+```powershell
+cd data
+cow_tool build data/tableGames.csv
+```
+
+Run the CSVw mappings to generate RDF:
+
+```powershell
+cow_tool convert data/tableGames.csv
+```
 
 ### Start workspace
 
