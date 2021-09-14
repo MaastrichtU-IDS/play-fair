@@ -42,7 +42,6 @@ Export the games table to a `games.csv` file
 Generate the metadata file with CSVw mappings:
 
 ```powershell
-cd data
 cow_tool build data/tableGames.csv
 ```
 
@@ -77,7 +76,7 @@ docker run --rm -it -p 8080:8080 -e PASSWORD=password -e GIT_URL= -v $(pwd):/hom
 
 ### Start database
 
-MariaDB on DSRI (5.5.68-MariaDB.
+MariaDB on DSRI (5.5.68-MariaDB) using OpenShift template:
 
 ```bash
 oc new-app mariadb-persistent -p DATABASE_SERVICE_NAME=mariadb \
@@ -112,7 +111,26 @@ helm install mariadb bitnami/mariadb \
     --set rbac.create=true,volumePermissions.enabled=true \
     --set auth.rootPassword=ludiluda,auth.database=ludiiGames \
     --set auth.username=mariadb,auth.password=ludiluda
+    
+    initdbScripts:
+##   my_init_script.sh: |
+##      #!/bin/bash
+##      echo "Do something."
 ```
+
+Using the config values file:
+
+```bash
+helm install mysql bitnami/mysql -f mysql-helm-values.yaml
+```
+
+Forward the service to access it on http://localhost:3306
+
+```bash
+oc port-forward svc/mysql 3306
+```
+
+You can now use your favorite tool to explore the database, we recommend to use the database administration tool [DBeaver](https://dbeaver.io/).
 
 Uninstall MariaDB 5.5:
 
