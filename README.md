@@ -15,6 +15,7 @@ PLAYFAIR will tackle the challenge of developing an LD workflow using CLARIAH, s
 ## Data 
 
 Ancient game in Louvre: https://collections.louvre.fr/ark:/53355/cl010006455
+Ancient game in British Museum: https://www.britishmuseum.org/collection/object/Y_EA22323
 
 ## Documentation
 
