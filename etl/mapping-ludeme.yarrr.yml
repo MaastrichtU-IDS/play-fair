@@ -22,11 +22,11 @@ authors:
 mappings:
   games:
     sources:
-      - access: " localhost:3307/ludiiGames"
+      - access: " mysql:3306/ludiiGames"
         type: mysql
         credentials:
           username: root
-          password: newpassword
+          password: ludiluda
         queryFormulation: sql2008
         query: | 
           SELECT Id, Name, Description FROM Games 
@@ -40,11 +40,11 @@ mappings:
 
   evidences:
     sources:
-      - access: " localhost:3307/ludiiGames"
+      - access: " mysql:3306/ludiiGames"
         type: mysql
         credentials:
           username: root
-          password: newpassword
+          password: ludiluda
         queryFormulation: sql2008
         query: | 
           SELECT * FROM Evidence
