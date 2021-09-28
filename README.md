@@ -12,11 +12,11 @@ The ERC-Digital Ludeme Project (DLP) is constructing a database of historical ev
 We will connect our dataset — that is the world’s most comprehensive dataset on Ancient games — with others, to make a universally FAIR to everyone, and find sources for additional data to complete our own set.
 PLAYFAIR will tackle the challenge of developing an LD workflow using CLARIAH, show the power of the Semantic Web to answering a research question, and enhance data published on the Web in any applications of digital humanities.
 
-## Data 
+## Data Identification
 
-Ancient game in Louvre: https://collections.louvre.fr/ark:/53355/cl010006455
-Ancient game in British Museum: https://www.britishmuseum.org/collection/object/Y_EA22323
-
++ Ancient game in Louvre: https://collections.louvre.fr/ark:/53355/cl010006455
++ Ancient game in British Museum: https://www.britishmuseum.org/collection/object/Y_EA22323
++ Ancient game in Metropolitan Museum of Art: https://www.metmuseum.org/art/collection/search/55326
 ## Documentation
 
 ### Install locally
