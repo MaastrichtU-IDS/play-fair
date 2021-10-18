@@ -16,9 +16,9 @@ PLAYFAIR will tackle the challenge of developing an LD workflow using CLARIAH, s
 ## Data Identification
 
 - This are examples of games in different museums:
-    + Ancient game in Louvre: https://collections.louvre.fr/ark:/53355/cl010006455
-    + Ancient game in British Museum: https://www.britishmuseum.org/collection/object/Y_EA22323 (game-board keyword search: https://www.britishmuseum.org/collection/term/x6970) 
-    + Ancient game in Metropolitan Museum of Art: https://www.metmuseum.org/art/collection/search/55326
+    + Ancient game in **Louvre**: https://collections.louvre.fr/ark:/53355/cl010006455
+    + Ancient game in **British Museum**: https://www.britishmuseum.org/collection/object/Y_EA22323 (game-board keyword search: https://www.britishmuseum.org/collection/term/x6970) 
+    + Ancient game in **Metropolitan Museum** of Art: https://www.metmuseum.org/art/collection/search/55326
 
 - This is the list of API/database links to integrate:
     + Metropolitan Art Museum: https://github.com/metmuseum/openaccess/blob/master/MetObjects.csv
