@@ -119,11 +119,11 @@ Want to learn more? Check out [PLAYFAIR Website!](https://www.clariah.nl/project
 
 _PLAYFAIR is a project of:_
 
-<a href="https://www.maastrichtuniversity.nl/research/institute-data-science"><img src="https://raw.githubusercontent.com/nofurtherinformation/play-fair/main/images/Logo_IDS.jpg" width="42px" height="60px" alt="Institute of Data Science" /></a>&emsp;&emsp;&emsp;&emsp;<a href="https://www.clariah.nl//"><img src="https://raw.githubusercontent.com/nofurtherinformation/TreeDiversity/main/images/Logo_Clariah.png" alt="Senseable City Lab Logo" width="355px" height="60px"/></a>
+<a href="https://www.maastrichtuniversity.nl/research/institute-data-science"><img src="images/Logo_IDS.jpg" width="42px" height="60px" alt="Institute of Data Science" /></a>&emsp;&emsp;&emsp;&emsp;<a href="https://www.clariah.nl//"><img src="images/Logo_Clariah.png" alt="Senseable City Lab Logo" width="355px" height="60px"/></a>
 
 ___
 
-<a href="http://www.ludeme.eu/"><img src="https://github.com/nofurtherinformation/TreeDiversity/blob/main/images/LOGO_ERC-FLAG_EU_.jpg" width="80px" height="80px" alt="Ludeme Project Logo" /></a>
+<a href="http://www.ludeme.eu/"><img src="images/LOGO_ERC-FLAG_EU_.jpg" width="80px" height="80px" alt="Ludeme Project Logo" /></a>
 
 This research received funding from the CLARIAH Infrastructure (Grant Agreement No. CP-21-F-I 5) under the WP-3.
 ## License
