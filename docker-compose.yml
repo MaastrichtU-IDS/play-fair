@@ -6,9 +6,11 @@ services:
         ports: 
             - 3307:3306
 
-    # code-server: 
-    #     image: ghcr.io/maastrichu-ids/code-server
-    #     ports: 
-    #         - 8080:8080
-    #     volumes:
-    #         - .:/home/coder
+    workspace: 
+        image: ghcr.io/maastrichtu-ids/jupyterlab:latest
+        ports: 
+            - 8888:8888
+        environment:
+            JUPYTER_TOKEN: pass
+        volumes:
+            - ./:/home/jovyan/work
