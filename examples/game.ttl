@@ -22,34 +22,39 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
 
-# rdf syntax generated automatically:
+# rdf syntax generated manually:
 # <https://w3id.org/ludeme/game/3> a schema:Game;
 #   dc:description "Senet is one of the oldest board games known in the world, documented from about 3000 BCE until the first millennium BCE in Egypt. It was also played In Cyprus for most of that time, and played at different times in the Levant. Though a full ruleset has never been found, hints from texts and tomb paintings in Egypt give us clues about the manner in which it was likely played. The game was also heavily imbued with religious significance, as the board itself represented the journey through the afterlife.";
 #   rdfs:label "Senet" .
 
 
 
-# rdf for description of a game: senet
-<https://ludii.games/identifier.php?Id=DLP.Games.3> a schema:Game ;
+# rdf for description of a game: senet and object details
+<https://ludii.games/identifier.php?Id=DLP.Games.3> a schema:Game ; # https://ludii.games/details.php?keyword=Senet
+    dcterms:object "http://vocab.getty.edu/aat/300222752" #related vocabularies for game object or wiki: https://www.wikidata.org/wiki/Q131436
     dcterms:title "Entry in Table Games for ID number 3"
     dcterms:identifier "3" ; #id
     dc:description "Senet is one of the oldest board games known in the world, documented from about 3000 BCE until the first millennium BCE in Egypt. It was also played In Cyprus for most of that time, and played at different times in the Levant. Though a full ruleset has never been found, hints from texts and tomb paintings in Egypt give us clues about the manner in which it was likely played. The game was also heavily imbued with religious significance, as the board itself represented the journey through the afterlife."; #Description
     rdfs:label "Senet" ; #Name or NativeName
     schema:countryOfOrigin "Egipt" ; #Origin, RegionId
-    wiki:P580 "31. century BCE" ; #Date, PeriodId
+    schema:startTime "-0031"^^xsd:gYear ; #Date, PeriodId wiki:P580 31. century BCE
+    schema:hasEndTime "-0029"^^xsd:gYear ; #Date, PeriodId for date range
     schema:citation "" ; #SeeAlso
-    schema:image "" ; #image
-    schema:latitude "444" ; #OriginPoint
-    schema:longitude "44.3" ; #OriginPoint
-    schema:category "board game" ; #category
+    schema:image "https://media.britishmuseum.org/media/Repository/Documents/2014_10/9_11/b1268a6e_e324_4afe_9ab9_a3bf00b6214d/preview_00505785_001.jpg" ; #imagefromBritishMuseum
+    schema:latitude "444"xsd:float ; #OriginPoint
+    schema:longitude "44.3"^^xsd:float ; #OriginPoint
+    schema:category "board, Race, Escape" ; #category
     schema:additionalPropery :_MainRuleset ; #MainRuleset
+    schema:additionalPropery :_Concepts ; #all related concepts for a game
     schema:author "Original author or designer of the game, where applciable" . #author
-
+    schema:provenance "Museum excavations"
+    schema:seeAlso "https://www.metmuseum.org/art/collection/search/553268" #met
+    schema:seeAlso "https://collections.louvre.fr/ark:/53355/cl010007877" #louvre
 
 :_MainRuleset a schema:additionalPropery ;
     dcterms:title "this is the name of the ruleset" #Name
     schema:identifier "528" ; #id
-    dc:description "this is a brief summary describing what is unique about this ruleset" ; #summary #description
+    dc:description " Played on a 3x10 board. Pieces can be five or seven in number. Two players. Four casting sticks used as dice. Boustrophedon track from top left to bottom right. " ; #summary #description
     rdfs:label "Senet" ; #Name or NativeName
     ludii:type "Primary identifier of the RulesetTypes table value associated with this ruleset" ; #type
     ludii:ruleset "These are the rules of this ruleset, described with reference to the main ruleset for this game" ; #Ruleset
@@ -60,5 +65,10 @@
     schema:citation "" ; #SeeAlso
     schema:latitude "444" ; #OriginPoint
     schema:longitude "44.3" ; #OriginPoint
+
+:_Concepts a schema:additionalPropery ; #select the ones for the network analysis
+    <https://ludii.games/concepts.php?gameId=3> a schema:additionalPropery ;
+
+
 
 

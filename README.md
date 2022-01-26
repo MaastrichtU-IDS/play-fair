@@ -22,7 +22,13 @@ PLAYFAIR will tackle the challenge of developing an LD workflow using CLARIAH, s
 
 - This is the list of API/database links to integrate:
     + Metropolitan Art Museum: https://github.com/metmuseum/openaccess/blob/master/MetObjects.csv
-    + The British Museum:no active sparql endpoint https://old.datahub.io/dataset/british-museum-collection or collection.britishmuseum.org/sparql          
+    + The British Museum:no active sparql endpoint https://old.datahub.io/dataset/british-museum-collection or collection.britishmuseum.org/sparql
+
+
+- British Museum:
+  + Query database: https://www.britishmuseum.org/collection/search?object=game-board
+  + Download dataset: [collections-22-01-26-10 28 18.csv](data/collections-22-01-26-10 28 18.csv)         
+  
 
 
 ## Documentation
