@@ -9,8 +9,8 @@ This is a repo for [CLARIAH Fellowship Call 2021](https://www.clariah.nl/news/cl
 
 ## Abstract
 
-The ERC-Digital Ludeme Project (DLP) is constructing a database of historical evidence for Ancient games, aiming at modeling the evolution of games throughout history. This database is unique in its scale, and its development is constrained by the unreliable nature of the data, lacking standards with other historical datasets. PLAYFAIR will apply FAIR principles to our dataset to maximise its usefulness and longevity, and explore the use of Semantic Web and Linked Data (LD) approaches for this purpose.
-We will connect our dataset — that is the world’s most comprehensive dataset on Ancient games — with others, to make a universally FAIR to everyone, and find sources for additional data to complete our own set.
+> To make Historical games data Interoperable (the I in FAIR)
+
 PLAYFAIR will tackle the challenge of developing an LD workflow using CLARIAH, show the power of the Semantic Web to answering a research question, and enhance data published on the Web in any applications of digital humanities.
 
 ## Data Identification
@@ -27,7 +27,7 @@ PLAYFAIR will tackle the challenge of developing an LD workflow using CLARIAH, s
 
 - British Museum:
   + Query database: https://www.britishmuseum.org/collection/search?object=game-board
-  + Download dataset: [collections-22-01-26-10 28 18.csv](data/collections-22-01-26-10 28 18.csv)   [collections-22-01-26-10 28 18.csv](data/collections-britishM.csv)      
+  + Download dataset: [collections-22-01-26-10 28 18.csv](data/collections-britishM.csv)      
   
 
 
@@ -131,7 +131,7 @@ Want to learn more? Check out [PLAYFAIR Website!](https://www.clariah.nl/project
 
 _PLAYFAIR is a project of:_
 
-<a href="https://www.maastrichtuniversity.nl/research/institute-data-science"><img src="images/Logo_IDS.jpg" width="100px" height="80px" alt="Institute of Data Science" /></a>&emsp;&emsp;&emsp;&emsp;<a href="https://www.clariah.nl//"><img src="images/Logo_Clariah.png" alt="Senseable City Lab Logo" width="355px" height="80px"/></a>
+<a href="https://www.maastrichtuniversity.nl/research/institute-data-science"><img src="images/Logo_IDS.jpg" width="50px" height="50px" alt="Institute of Data Science" /></a>&emsp;&emsp;&emsp;&emsp;<a href="https://www.clariah.nl//"><img src="images/Logo_Clariah.png" alt="Clariah Logo" width="80px" height="80px"/></a>
 
 ---
 
