@@ -27,11 +27,17 @@ PLAYFAIR will tackle the challenge of developing an LD workflow using CLARIAH, s
 
 - British Museum:
   + Query database: https://www.britishmuseum.org/collection/search?object=game-board
-  + Download dataset: [collections-22-01-26-10 28 18.csv](data/collections-22-01-26-10 28 18.csv)         
+  + Download dataset: [collections-22-01-26-10 28 18.csv](data/collections-22-01-26-10 28 18.csv)   [collections-22-01-26-10 28 18.csv](data/collections-britishM.csv)      
   
 
 
 ## Documentation
+
+### PLAY-FAIR Data Model
+
+Concepts and properties are annotated with general ontologies
+
++ [Data Model](notebooks/data-model.md)
 
 ### Install locally
 
