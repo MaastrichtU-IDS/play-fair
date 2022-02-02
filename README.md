@@ -68,6 +68,11 @@ Generate the metadata file with CSVw mappings:
 cow_tool build data/tableGames.csv
 ```
 
+Change the json file generated:
+* Change the base URI to w3id.org/ludeme
+* Add `propertyUrl` to map to our predicates (cf. https://www.w3.org/TR/tabular-data-primer/#property-names)
+
+
 Run the CSVw mappings to generate RDF:
 
 ```powershell

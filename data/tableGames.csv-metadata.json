@@ -55,7 +55,7 @@
  "dc:title": "tableGames.csv",
  "dcat:keyword": [],
  "dc:publisher": {
-  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:name": "IDS Institute of Data Science Maastricht University UM",
   "schema:url": {
    "@id": "http://datalegend.net"
   }
@@ -85,6 +85,7 @@
      "Name"
     ],
     "dc:description": "Name",
+    "propertyUrl": "rdfs:label",
     "datatype": "string"
    },
    {
