@@ -23,6 +23,7 @@
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wiki: <http://www.wikidata.org/entity/>
 
 
 # rdf syntax generated manually:
@@ -47,8 +48,8 @@
     schema:latitude "444"xsd:float ; #OriginPoint
     schema:longitude "44.3"^^xsd:float ; #OriginPoint
     schema:category "board, Race, Escape" ; #category
-    schema:additionalPropery :_MainRuleset ; #MainRuleset
-    schema:additionalPropery :_Concepts ; #all related concepts for a game
+    schema:additionalProperty :_MainRuleset ; #MainRuleset
+    schema:additionalProperty :_Concepts ; #all related concepts for a game
     schema:author "Original author or designer of the game, where applciable" . #author
     schema:provenance "Museum excavations"
     schema:seeAlso "https://www.metmuseum.org/art/collection/search/553268" #met
@@ -71,5 +72,6 @@
 
 :_Concepts a schema:additionalPropery ; #select the ones for the network analysis
     <https://ludii.games/concepts.php?gameId=3> a schema:additionalPropery ;
+    sio:statistics "XX" ; 
 
 ```
