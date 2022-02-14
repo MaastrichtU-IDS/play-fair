@@ -49,14 +49,16 @@ PLAYFAIR will tackle the challenge of developing an LD workflow using CLARIAH, s
 
 Find links between DLP Database entities and British/Louvre/Wikidata:
 + Images
-+ Culture:
++ Culture
 + Material
 
 ### PLAY-FAIR Data Model
 
 Concepts and properties are annotated with general ontologies
 
-+ [Data Model](notebooks/data-model.md)
++ [Data Model Game table](notebooks/data-model.md)
++ [Data Model Ruleset Regions](notebooks/data-model-regions.md)
++ [Data Model Ruleset Peridos](notebooks/data-model-periods.md)
 
 ### Install locally
 
