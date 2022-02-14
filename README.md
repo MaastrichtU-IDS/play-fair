@@ -58,7 +58,7 @@ Concepts and properties are annotated with general ontologies
 
 + [Data Model Game table](notebooks/data-model.md)
 + [Data Model Ruleset Regions](notebooks/data-model-regions.md)
-+ [Data Model Ruleset Peridos](notebooks/data-model-periods.md)
++ [Data Model Ruleset Periods](notebooks/data-model-periods.md) - _underwork_
 
 ### Install locally
 
