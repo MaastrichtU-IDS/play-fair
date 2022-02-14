@@ -25,6 +25,7 @@
    "juso": "http://http://rdfs.co/juso/",
    "np": "http://www.nanopub.org/nschema#",
    "lemon": "http://lemon-model.net/lemon#",
+   "ludeme": "https://w3id.org/ludeme/" ,
    "midi": "http://purl.org/midi-ld/midi#",
    "owl": "http://www.w3.org/2002/07/owl#",
    "periodo": "http://n2t.net/ark:/99152/p0v#",
@@ -76,7 +77,7 @@
      "Id"
     ],
     "dc:description": "Id",
-    "datatype": "string"
+    "datatype": "integer"
    },
    {
     "@id": "https://w3id.org/ludeme/tableGames.csv/column/Name",
@@ -104,6 +105,7 @@
      "Description"
     ],
     "dc:description": "Description",
+    "propertyUrl": "dc:description",
     "datatype": "string"
    },
    {
@@ -112,7 +114,8 @@
     "titles": [
      "MainRuleset"
     ],
-    "dc:description": "MainRuleset",
+    "schema:additionalProperty": "MainRuleset",
+    "propertyUrl": "schema:additionalProperty",
     "datatype": "string"
    },
    {
@@ -130,7 +133,8 @@
     "titles": [
      "Reference"
     ],
-    "dc:description": "Reference",
+    "schema:citation": "Reference",
+    "propertyUrl": "schema:citation",
     "datatype": "string"
    },
    {
@@ -139,7 +143,8 @@
     "titles": [
      "Origin"
     ],
-    "dc:description": "Origin",
+    "schema:countryOfOrigin": "Origin",
+    "propertyUrl": "schema:countryOfOrigin",
     "datatype": "string"
    },
    {
@@ -148,8 +153,9 @@
     "titles": [
      "DLPGame"
     ],
-    "dc:description": "DLPGame",
-    "datatype": "string"
+    "schema:Project": "DLPGame",
+    "propertyUrl": "schema:Project" ,
+    "datatype": "boolean"
    },
    {
     "@id": "https://w3id.org/ludeme/tableGames.csv/column/PublicGame",
@@ -157,8 +163,9 @@
     "titles": [
      "PublicGame"
     ],
-    "dc:description": "PublicGame",
-    "datatype": "string"
+    "ludeme:PublicGame": "PublicGame",
+    "propertyUrl": "ludeme:PublicGame",
+    "datatype": "boolean"
    },
    {
     "@id": "https://w3id.org/ludeme/tableGames.csv/column/knownAliases",
@@ -166,7 +173,8 @@
     "titles": [
      "knownAliases"
     ],
-    "dc:description": "knownAliases",
+    "schema:alternateName": "knownAliases",
+    "propertyUrl": "schema:alternateName",
     "datatype": "string"
    },
    {
@@ -175,7 +183,8 @@
     "titles": [
      "Author"
     ],
-    "dc:description": "Author",
+    "schema:author": "Author",
+    "propertyUrl": "schema:author",
     "datatype": "string"
    },
    {
@@ -184,7 +193,8 @@
     "titles": [
      "Publisher"
     ],
-    "dc:description": "Publisher",
+    "schema:publisher": "Publisher",
+    "propertyUrl": "schema:publisher",
     "datatype": "string"
    },
    {
@@ -193,8 +203,9 @@
     "titles": [
      "Date"
     ],
-    "dc:description": "Date",
-    "datatype": "string"
+    "schema:startTime": "Date",
+    "propertyUrl": "schema:startTime",
+    "datatype": "date"
    },
    {
     "@id": "https://w3id.org/ludeme/tableGames.csv/column/ProprietaryGame",
@@ -211,7 +222,8 @@
     "titles": [
      "Credit"
     ],
-    "dc:description": "Credit",
+    "ludeme:Credit": "Credit",
+    "propertyUrl": "ludeme:PublicGame",
     "datatype": "string"
    },
    {
@@ -220,7 +232,8 @@
     "titles": [
      "SeeAlso"
     ],
-    "dc:description": "SeeAlso",
+    "schema:isRelatedTo": "SeeAlso",
+    "propertyUrl": "schema:isRelatedTo",
     "datatype": "string"
    },
    {

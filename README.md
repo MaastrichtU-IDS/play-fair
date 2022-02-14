@@ -9,13 +9,17 @@ This is a repo for [CLARIAH Fellowship Call 2021](https://www.clariah.nl/news/cl
 
 ---
 
-## Abstract
+## Objective
+
+The aim of PLAY-FAIR project is to make a substantial contribution to enable realisation of the ambitions within CLARIAH Community to make collections FAIR for research and public engagement purposes.
 
 > To make Historical games data Interoperable (the I in FAIR)
 
 PLAYFAIR will tackle the challenge of developing an LD workflow using CLARIAH, show the power of the Semantic Web to answering a research question, and enhance data published on the Web in any applications of digital humanities.
 
-## Data Identification
+## Documentation
+
+### Data Identification
 
 - This are examples of games in different museums:
     + Ancient game in **Louvre**: https://collections.louvre.fr/ark:/53355/cl010006455
@@ -41,7 +45,12 @@ PLAYFAIR will tackle the challenge of developing an LD workflow using CLARIAH, s
   
 
 
-## Documentation
+### Data Argumentation
+
+Find links between DLP Database entities and British/Louvre/Wikidata:
++ Images
++ Culture:
++ Material
 
 ### PLAY-FAIR Data Model
 
