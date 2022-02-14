@@ -35,7 +35,7 @@ PLAYFAIR will tackle the challenge of developing an LD workflow using CLARIAH, s
 - Louvre Museum:
 + keyword: plateau de jeu
 + Query database: https://collections.louvre.fr/search/export?q=%22plateau%20de%20jeu%22
-+ Download dataset csv format: [Link](https://collections.louvre.fr/search/export?q=%22plateau%20de%20jeu%22) 
++ Download dataset csv format: [Link](https://collections.louvre.fr/recherche?q=%22plateau+de+jeu%22) 
 + Download dataset json format: [Link](https://collections.louvre.fr/search/export?q=%22plateau%20de%20jeu%22)    
 
   
