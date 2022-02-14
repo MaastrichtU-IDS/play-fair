@@ -1,3 +1,5 @@
+# to run .\etl\[..].py
+
 import pandas as pd
 from rdflib import ConjunctiveGraph, Graph, RDFS, URIRef, Literal
 # from rdflib.namespaces import RDFS
@@ -52,8 +54,14 @@ for s, p, o in g.triples((None, RDFS.label, None)):
             pass
 
         try:
-            rich_g.add((s, URIRef('http://culkture'), Literal(row['Culture']), graph_uri))
+            rich_g.add((s, URIRef('http://cultures'), Literal(row['Culture']), graph_uri))
         except Exception as e:
             pass
+
+        try:
+            rich_g.add((s, URIRef('http://museum_number'), Literal(row['Museum number']), graph_uri))
+        except Exception as e:
+            pass
+
 
 rich_g.serialize('data/enriched_pic.nq', format='nquads')

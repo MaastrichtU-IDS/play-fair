@@ -28,8 +28,16 @@ PLAYFAIR will tackle the challenge of developing an LD workflow using CLARIAH, s
 
 
 - British Museum:
+  + keyword: game-board
   + Query database: https://www.britishmuseum.org/collection/search?object=game-board
-  + Download dataset: [collections-22-01-26-10 28 18.csv](data/collections-britishM.csv)      
+  + Download dataset: [collections-22-01-26-10 28 18.csv](data/collections-britishM.csv)    
+
+- Louvre Museum:
++ keyword: plateau de jeu
++ Query database: https://collections.louvre.fr/search/export?q=%22plateau%20de%20jeu%22
++ Download dataset csv format: [Link](https://collections.louvre.fr/search/export?q=%22plateau%20de%20jeu%22) 
++ Download dataset json format: [Link](https://collections.louvre.fr/search/export?q=%22plateau%20de%20jeu%22)    
+
   
 
 
