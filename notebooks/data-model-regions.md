@@ -70,5 +70,4 @@
     geonames:7729900 "0"^^xsd:boolean ; #Micronesia
     geonames:7729901 "0"^^xsd:boolean . #Polynesia
 
-
 ```

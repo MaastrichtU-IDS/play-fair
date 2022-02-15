@@ -1,3 +1,6 @@
+### Example RDF (turtle):
+
+```ttl
 @prefix : <http://mapping.example.com/> .
 @prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
@@ -58,6 +61,5 @@
         schema:sameAs wiki:Q36574 ; 
     ludeme:2000s "0"^^xsd:boolean ;
         schema:sameAs wiki:Q35024 ; 
-        
-        
-        
+         
+```
