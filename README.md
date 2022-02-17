@@ -56,9 +56,9 @@ Find links between DLP Database entities and British/Louvre/Wikidata:
 
 Concepts and properties are annotated with general ontologies
 
-+ [Data Model Game table](notebooks/data-model.md)
-+ [Data Model Ruleset Regions](notebooks/data-model-regions.md)
-+ [Data Model Ruleset Periods](notebooks/data-model-periods.md)
++ [Data Model Game table](model/data-model.md)
++ [Data Model Ruleset Regions](model/data-model-regions.md)
++ [Data Model Ruleset Periods](model/data-model-periods.md)
 
 ### Install locally
 
