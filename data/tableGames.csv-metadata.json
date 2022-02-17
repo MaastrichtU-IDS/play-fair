@@ -4,7 +4,7 @@
   "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
   {
    "@language": "en",
-   "@base": "https://w3id.org/ludeme/"
+   "@base": "https://ludii.games/identifier.php?Id=DLP.Games."
   },
   {
    "aat": "http://vocab.getty.edu/aat/",
