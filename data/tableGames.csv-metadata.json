@@ -1,10 +1,10 @@
 {
- "@id": "https://w3id.org/ludeme/tableGames.csv",
+ "@id": "https://ludii.games/identifier.php?Id=DLP.Games./tableGames.csv",
  "@context": [
   "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
   {
    "@language": "en",
-   "@base": "https://w3id.org/ludeme/"
+   "@base": "https://ludii.games/identifier.php?Id=DLP.Games./"
   },
   {
    "aat": "http://vocab.getty.edu/aat/",
@@ -25,7 +25,7 @@
    "juso": "http://http://rdfs.co/juso/",
    "np": "http://www.nanopub.org/nschema#",
    "lemon": "http://lemon-model.net/lemon#",
-   "ludeme": "https://w3id.org/ludeme/" ,
+   "ludeme": "https://ludii.games/identifier.php?Id=DLP.Games./" ,
    "midi": "http://purl.org/midi-ld/midi#",
    "owl": "http://www.w3.org/2002/07/owl#",
    "periodo": "http://n2t.net/ark:/99152/p0v#",
@@ -76,7 +76,7 @@
         "valueUrl": "Game"
     },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Id",
+    "@id": "https://ludii.games/identifier.php?Id=DLP.Games./tableGames.csv/column/Id",
     "name": "Id",
     "titles": [
      "Id"
@@ -85,7 +85,7 @@
     "datatype": "integer"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Name",
+    "@id": "https://ludii.games/identifier.php?Id=DLP.Games./tableGames.csv/column/Name",
     "name": "Name",
     "titles": [
      "Name"
@@ -95,7 +95,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/NativeName",
+    "@id": "https://ludii.games/tableGames.csv/column/NativeName",
     "name": "NativeName",
     "titles": [
      "NativeName"
@@ -104,7 +104,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Description",
+    "@id": "https://ludii.games/tableGames.csv/column/Description",
     "name": "Description",
     "titles": [
      "Description"
@@ -114,7 +114,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/MainRuleset",
+    "@id": "https://ludii.games/tableGames.csv/column/MainRuleset",
     "name": "MainRuleset",
     "titles": [
      "MainRuleset"
@@ -124,7 +124,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/LudiiRuleset",
+    "@id": "https://ludii.games/tableGames.csv/column/LudiiRuleset",
     "name": "LudiiRuleset",
     "titles": [
      "LudiiRuleset"
@@ -133,7 +133,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Reference",
+    "@id": "https://ludii.games/tableGames.csv/column/Reference",
     "name": "Reference",
     "titles": [
      "Reference"
@@ -143,7 +143,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Origin",
+    "@id": "https://ludii.games/tableGames.csv/column/Origin",
     "name": "Origin",
     "titles": [
      "Origin"
@@ -153,7 +153,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/DLPGame",
+    "@id": "https://ludii.games/tableGames.csv/column/DLPGame",
     "name": "DLPGame",
     "titles": [
      "DLPGame"
@@ -163,7 +163,7 @@
     "datatype": "boolean"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/PublicGame",
+    "@id": "https://ludii.games/tableGames.csv/column/PublicGame",
     "name": "PublicGame",
     "titles": [
      "PublicGame"
@@ -173,7 +173,7 @@
     "datatype": "boolean"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/knownAliases",
+    "@id": "https://ludii.games/tableGames.csv/column/knownAliases",
     "name": "knownAliases",
     "titles": [
      "knownAliases"
@@ -183,7 +183,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Author",
+    "@id": "https://ludii.games/tableGames.csv/column/Author",
     "name": "Author",
     "titles": [
      "Author"
@@ -193,7 +193,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Publisher",
+    "@id": "https://ludii.games/tableGames.csv/column/Publisher",
     "name": "Publisher",
     "titles": [
      "Publisher"
@@ -203,7 +203,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Date",
+    "@id": "https://ludii.games/tableGames.csv/column/Date",
     "name": "Date",
     "titles": [
      "Date"
@@ -213,7 +213,7 @@
     "datatype": "date"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/ProprietaryGame",
+    "@id": "https://ludii.games/tableGames.csv/column/ProprietaryGame",
     "name": "ProprietaryGame",
     "titles": [
      "ProprietaryGame"
@@ -222,7 +222,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Credit",
+    "@id": "https://ludii.games/tableGames.csv/column/Credit",
     "name": "Credit",
     "titles": [
      "Credit"
@@ -232,7 +232,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/SeeAlso",
+    "@id": "https://ludii.games/tableGames.csv/column/SeeAlso",
     "name": "SeeAlso",
     "titles": [
      "SeeAlso"
@@ -242,7 +242,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/BGGId",
+    "@id": "https://ludii.games/tableGames.csv/column/BGGId",
     "name": "BGGId",
     "titles": [
      "BGGId"
@@ -251,7 +251,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/OriginPoint",
+    "@id": "https://ludii.games/tableGames.csv/column/OriginPoint",
     "name": "OriginPoint",
     "titles": [
      "OriginPoint"
@@ -260,7 +260,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/EvidenceRange",
+    "@id": "https://ludii.games/tableGames.csv/column/EvidenceRange",
     "name": "EvidenceRange",
     "titles": [
      "EvidenceRange"
@@ -269,7 +269,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/WishlistGame",
+    "@id": "https://ludii.games/tableGames.csv/column/WishlistGame",
     "name": "WishlistGame",
     "titles": [
      "WishlistGame"
@@ -278,7 +278,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Notes",
+    "@id": "https://ludii.games/tableGames.csv/column/Notes",
     "name": "Notes",
     "titles": [
      "Notes"
@@ -287,7 +287,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/HelpUs",
+    "@id": "https://ludii.games/tableGames.csv/column/HelpUs",
     "name": "HelpUs",
     "titles": [
      "HelpUs"
@@ -296,7 +296,7 @@
     "datatype": "string"
    },
    {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/ForceRulesetInLud",
+    "@id": "https://ludii.games/tableGames.csv/column/ForceRulesetInLud",
     "name": "ForceRulesetInLud",
     "titles": [
      "ForceRulesetInLud"
