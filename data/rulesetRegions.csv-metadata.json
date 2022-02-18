@@ -4,7 +4,7 @@
   "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
   {
    "@language": "en",
-   "@base": "https://iisg.amsterdam/"
+   "@base": "https://w3id.org/ludeme/ruleset/"
   },
   {
    "aat": "http://vocab.getty.edu/aat/",
@@ -33,7 +33,7 @@
    "qb": "http://purl.org/linked-data/cube#",
    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-   "schema": "http://schema.org/",
+   "schema": "https://schema.org/",
    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
    "sdr": "https://iisg.amsterdam/",
    "sdv": "https://iisg.amsterdam/vocab/",
@@ -72,33 +72,11 @@
   "columns": [
    {
     "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/GameId",
-    "name": "GameId",
     "titles": [
      "GameId"
     ],
-    "rdfs:label": "GameId",
-    "propertyUrl": "rdfs:label",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/RulesetId",
-    "name": "RulesetId",
-    "titles": [
-     "RulesetId"
-    ],
-    "schema:identifier": "RulesetId",
-    "propertyUrl": "schema:identifier",
-    "datatype": "integer"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/GameName",
-    "name": "GameName",
-    "titles": [
-     "GameName"
-    ],
-    "rdfs:label": "GameName",
-    "propertyUrl": "rdfs:label",
-    "datatype": "string"
+    "propertyUrl": "rdfs:defines",
+    "valueUrl": "https://w3id.org/ludeme/game/{GameId}"
    },
    {
     "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/RulesetName",
@@ -341,7 +319,7 @@
     "datatype": "boolean"
    }
   ],
-  "primaryKey": "GameId",
-  "aboutUrl": "{GameId}"
+  "primaryKey": "RulesetId",
+  "aboutUrl": "{RulesetId}"
  }
 }

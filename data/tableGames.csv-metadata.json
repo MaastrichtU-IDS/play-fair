@@ -4,7 +4,7 @@
   "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
   {
    "@language": "en",
-   "@base": "https://w3id.org/ludeme/"
+   "@base": "https://w3id.org/ludeme/game/"
   },
   {
    "aat": "http://vocab.getty.edu/aat/",
@@ -34,7 +34,7 @@
    "qb": "http://purl.org/linked-data/cube#",
    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-   "schema": "http://schema.org/",
+   "schema": "https://schema.org/",
    "sem": "http://semanticweb.cs.vu.nl/2009/11/sem/",
    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
    "sdr": "https://iisg.amsterdam/",
@@ -73,7 +73,7 @@
     {
         "virtual": "true",
         "propertyUrl": "rdf:type",
-        "valueUrl": "Game"
+        "valueUrl": "https://schema.org/Game"
     },
    {
     "@id": "https://w3id.org/ludeme/tableGames.csv/column/Id",

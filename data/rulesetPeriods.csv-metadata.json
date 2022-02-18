@@ -4,7 +4,7 @@
   "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
   {
    "@language": "en",
-   "@base": "https://iisg.amsterdam/"
+   "@base": "https://w3id.org/ludeme/ruleset/"
   },
   {
    "aat": "http://vocab.getty.edu/aat/",
@@ -33,7 +33,7 @@
    "qb": "http://purl.org/linked-data/cube#",
    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-   "schema": "http://schema.org/",
+   "schema": "https://schema.org/",
    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
    "sdr": "https://iisg.amsterdam/",
    "sdv": "https://iisg.amsterdam/vocab/",
@@ -43,6 +43,7 @@
    "ulan": "http://vocab.getty.edu/ulan/",
    "wgs84": "http://www.w3.org/2003/01/geo/wgs84_pos#",
    "xml": "http://www.w3.org/XML/1998/namespace/",
+   "wiki": "http://www.wikidata.org/entity/#" ,
    "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
  ],
@@ -70,17 +71,15 @@
 "tableSchema": {
  "columns": [
   {
-   "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/GameId",
-   "name": "GameId",
-   "titles": [
-    "GameId"
-   ],
-   "rdfs:label": "GameId",
-   "propertyUrl": "rdfs:label",
-   "datatype": "string"
-  },
+    "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/GameId",
+    "titles": [
+     "GameId"
+    ],
+    "propertyUrl": "rdfs:defines",
+    "valueUrl": "https://w3id.org/ludeme/game/{GameId}"
+   },
   {
-   "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/RulesetId",
+   "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/RulesetId",
    "name": "RulesetId",
    "titles": [
     "RulesetId"
@@ -90,7 +89,7 @@
    "datatype": "integer"
   },
   {
-   "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/GameName",
+   "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/GameName",
    "name": "GameName",
    "titles": [
     "GameName"
@@ -100,7 +99,7 @@
    "datatype": "string"
   },
   {
-   "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/RulesetName",
+   "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/RulesetName",
    "name": "RulesetName",
    "titles": [
     "RulesetName"
@@ -240,7 +239,7 @@
     "datatype": "boolean"
    }
   ],
-  "primaryKey": "GameId",
-  "aboutUrl": "{GameId}"
+  "primaryKey": "RulesetId",
+  "aboutUrl": "{RulesetId}"
  }
 }

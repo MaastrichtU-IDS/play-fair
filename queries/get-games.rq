@@ -1,0 +1,15 @@
+PREFIX schema: <https://schema.org/>
+PREFIX schemas: <https://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ludeme: <https://w3id.org/ludeme/>
+PREFIX ludata: <https://w3id.org/ludeme/data/>
+PREFIX dc: <http://purl.org/dc/terms/>
+
+SELECT * WHERE {
+  ?game a schemas:Game ;
+  	rdfs:label ?label ;
+  	schema:countryOfOrigin ?Origin .
+  ?rules rdfs:defines ?game .
+ #FILTER contains(LCASE(?label), "senet")
+} LIMIT 1000
