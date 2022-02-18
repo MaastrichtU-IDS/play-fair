@@ -241,6 +241,6 @@
    }
   ],
   "primaryKey": "GameId",
-  "aboutUrl": "{_row}"
+  "aboutUrl": "{GameId}"
  }
 }

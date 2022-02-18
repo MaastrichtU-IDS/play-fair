@@ -63,5 +63,4 @@ for s, p, o in g.triples((None, RDFS.label, None)):
         except Exception as e:
             pass
 
-
 rich_g.serialize('data/enriched_pic.nq', format='nquads')

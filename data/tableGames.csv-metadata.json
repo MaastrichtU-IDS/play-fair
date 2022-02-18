@@ -306,6 +306,6 @@
    }
   ],
   "primaryKey": "Id",
-  "aboutUrl": "{_row}"
+  "aboutUrl": "{Id}"
  }
 }
