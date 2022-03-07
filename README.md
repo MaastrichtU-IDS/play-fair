@@ -1,25 +1,31 @@
 
 # FAIR Data for Historical Games
 
-This is a repo for [CLARIAH Fellowship Call 2021](https://www.clariah.nl/news/clariah-fellowship-call-2021)
+A RDF Knolwedge graph for hisotical games:
 
-[Proposal Accepted](files/CLARIAH-F-2021_paper.pdf)
+  + This is a repo for [CLARIAH Fellowship Call 2021](https://www.clariah.nl/news/clariah-fellowship-call-2021)
 
-[E-Data & Research Article](https://edata.nl/2022/01/31/historische-spelletjesdatabase-in-de-maak/)
++ [Proposal Accepted](files/CLARIAH-F-2021_paper.pdf)
+
++ More info [E-Data & Research Article](https://edata.nl/2022/01/31/historische-spelletjesdatabase-in-de-maak/)
 
 ---
 
 ## Objective
 
-The aim of PLAY-FAIR project is to make a substantial contribution to enable realisation of the ambitions within CLARIAH Community to make collections FAIR for research and public engagement purposes.
 
-> To make Historical games data Interoperable (the I in FAIR)
+> To make traditional games data Interoperable (the I in FAIR)
 
-PLAYFAIR will tackle the challenge of developing an LD workflow using CLARIAH, show the power of the Semantic Web to answering a research question, and enhance data published on the Web in any applications of digital humanities.
+## PLAY-FAIR Data Model
 
-## Documentation
+Concepts and properties are annotated with general ontologies
 
-### Data Identification & Argumentation
++ [Data Model Game table](model/data-model.md)
++ [Data Model Ruleset Regions](model/data-model-regions.md)
++ [Data Model Ruleset Periods](model/data-model-periods.md)
+
+
+## Data Identification & Argumentation
 
 We link Ludeme dataset to data descriptors from British Museum as following:
 
@@ -43,15 +49,9 @@ Other sources from Museums to be integrated are currently investigated:
     + The British Museum:no active sparql endpoint https://old.datahub.io/dataset/british-museum-collection or collection.britishmuseum.org/sparql
 
 
-### PLAY-FAIR Data Model
 
-Concepts and properties are annotated with general ontologies
 
-+ [Data Model Game table](model/data-model.md)
-+ [Data Model Ruleset Regions](model/data-model-regions.md)
-+ [Data Model Ruleset Periods](model/data-model-periods.md)
-
-### Install locally
+## Install locally
 
 Install dependencies:
 
@@ -61,7 +61,7 @@ wget https://github.com/RMLio/rmlmapper-java/releases/download/v4.12.0/rmlmapper
 pip install cow-csvw
 ```
 
-### Run CoW
+## Run CoW
 
 - **Inputs** to `./data`:
 
@@ -103,7 +103,7 @@ cow_tool convert data/tableGames.csv
 
 
 
-### RDF files to Druid
+## RDF files to Druid
 
 - **Graphs**:
 
@@ -112,7 +112,12 @@ cow_tool convert data/tableGames.csv
 
 - **Services**:
 
-  + (SPARQL endpoint)[https://druid.datalegend.net/UtrillaGuerreroC/Ludeme/sparql/Ludeme]
+  + (The SPARQL endpoint is accessible at)[https://druid.datalegend.net/UtrillaGuerreroC/Ludeme/sparql/Ludeme](https://druid.datalegend.net/UtrillaGuerreroC/Ludeme/sparql/Ludeme)
+
+
+- **Check the SPARQL queries**
+
+Queries from the grlc API can be checked and changed in the .rq files.
     
     * Examples:
         - [Get Games](queries/get-games.rq)
