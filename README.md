@@ -1,7 +1,7 @@
 
-# FAIR Data for Historical Games
+# FAIR Data for Traditional Games
 
-A RDF Knowledge graph for historical games:
+A RDF Knowledge graph for traditional games:
 
   + This is a repo for [CLARIAH Fellowship Call 2021](https://www.clariah.nl/news/clariah-fellowship-call-2021)
 
