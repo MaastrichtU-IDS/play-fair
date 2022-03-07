@@ -19,38 +19,29 @@ PLAYFAIR will tackle the challenge of developing an LD workflow using CLARIAH, s
 
 ## Documentation
 
-### Data Identification
+### Data Identification & Argumentation
 
-- This are examples of games in different museums:
-    + Ancient game in **Louvre**: https://collections.louvre.fr/ark:/53355/cl010006455
-    + Ancient game in **British Museum**: https://www.britishmuseum.org/collection/object/Y_EA22323 (game-board keyword search: https://www.britishmuseum.org/collection/term/x6970) 
-    + Ancient game in **Metropolitan Museum** of Art: https://www.metmuseum.org/art/collection/search/55326
-
-- This is the list of API/database links to integrate:
-    + Metropolitan Art Museum: https://github.com/metmuseum/openaccess/blob/master/MetObjects.csv
-    + The British Museum:no active sparql endpoint https://old.datahub.io/dataset/british-museum-collection or collection.britishmuseum.org/sparql
-
+We link Ludeme dataset to data descriptors from British Museum as following:
 
 - British Museum:
   + keyword: game-board
   + Query database: https://www.britishmuseum.org/collection/search?object=game-board
   + Download dataset: [collections-22-01-26-10 28 18.csv](data/collections-britishM.csv)    
 
+
+
+Other sources from Museums to be integrated are currently investigated:
+
 - Louvre Museum:
-+ keyword: plateau de jeu
-+ Query database: https://collections.louvre.fr/search/export?q=%22plateau%20de%20jeu%22
-+ Download dataset csv format: [Link](https://collections.louvre.fr/recherche?q=%22plateau+de+jeu%22) 
-+ Download dataset json format: [Link](https://collections.louvre.fr/search/export?q=%22plateau%20de%20jeu%22)    
+  + keyword: plateau de jeu
+  + Query database: https://collections.louvre.fr/search/export?q=%22plateau%20de%20jeu%22
+  + Download dataset csv format: [Link](https://collections.louvre.fr/recherche?q=%22plateau+de+jeu%22) 
+  + Download dataset json format: [Link](https://collections.louvre.fr/search/export?q=%22plateau%20de%20jeu%22) 
 
-  
+- This is the list of API/database links to integrate:
+    + Metropolitan Art Museum: https://github.com/metmuseum/openaccess/blob/master/MetObjects.csv
+    + The British Museum:no active sparql endpoint https://old.datahub.io/dataset/british-museum-collection or collection.britishmuseum.org/sparql
 
-
-### Data Argumentation
-
-Find links between DLP Database entities and British/Louvre/Wikidata:
-+ Images
-+ Culture
-+ Material
 
 ### PLAY-FAIR Data Model
 
@@ -70,16 +61,14 @@ wget https://github.com/RMLio/rmlmapper-java/releases/download/v4.12.0/rmlmapper
 pip install cow-csvw
 ```
 
-### Run RML mapper
-
-```powershell
-cd etl
-.\run.ps1
-```
-
 ### Run CoW
 
-Export the games table to a `games.csv` file
+- Export the games table to a `tableGames.csv` file to `./data`:
+  + [data/tableGames.csv](data/tableGames.csv)
+  + [data/rulesetRegions.csv](data/rulesetRegions.csv)
+  + [data/rulesetPeriods.csv](data/rulesetPeriods.csv)
+
+
 
 Generate the metadata file with CSVw mappings:
 
@@ -91,12 +80,32 @@ Change the json file generated:
 * Change the base URI to w3id.org/ludeme
 * Add `propertyUrl` to map to our predicates (cf. https://www.w3.org/TR/tabular-data-primer/#property-names)
 
+- Generated Skeleton Schema in `./data`:
+  + [tableGames.csv-metadata.json](data/tableGames.csv-metadata.json)
+  + [rulesetRegions.csv-metadata.json](data/rulesetRegions.csv-metadata.json)
+  + [rulesetPeriods.csv-metadata.json](data/rulesetPeriods.csv-metadata.json)
+
+
 
 Run the CSVw mappings to generate RDF:
 
 ```powershell
 cow_tool convert data/tableGames.csv
 ```
+
+
+### Outputs
+
+
+
+
+### Run RML mapper
+
+```powershell
+cd etl
+.\run.ps1
+```
+
 
 ### Start workspace
 
