@@ -89,6 +89,7 @@ cow_tool build data/tableGames.csv
 
 - Run the CSVw mappings to generate RDF:
 
+
 ```powershell
 cow_tool convert data/tableGames.csv
 ```
@@ -101,6 +102,24 @@ cow_tool convert data/tableGames.csv
 
 
 
+
+### RDF files to Druid
+
+- **Graphs**:
+
+  + [Datasets not publicly available yet][https://druid.datalegend.net/UtrillaGuerreroC/Ludeme/]
+
+
+- **Services**:
+
+  + (SPARQL endpoint)[https://druid.datalegend.net/UtrillaGuerreroC/Ludeme/sparql/Ludeme]
+    
+    * Examples:
+        - [Get Games](queries/get-games.rq)
+        - [Get images](queries/get-games-images.rq)
+
+
+---
 
 ### Run RML mapper
 
