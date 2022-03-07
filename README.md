@@ -112,14 +112,14 @@ cow_tool convert data/tableGames.csv
 
 - **Services**:
 
-  + (The SPARQL endpoint is accessible at)[https://druid.datalegend.net/UtrillaGuerreroC/Ludeme/sparql/Ludeme](https://druid.datalegend.net/UtrillaGuerreroC/Ludeme/sparql/Ludeme)
+  + The SPARQL endpoint is accessible at [https://druid.datalegend.net/UtrillaGuerreroC/Ludeme/sparql/Ludeme](https://druid.datalegend.net/UtrillaGuerreroC/Ludeme/sparql/Ludeme)
 
 
 - **Check the SPARQL queries**
 
 Queries from the grlc API can be checked and changed in the .rq files.
     
-    * Examples:
+  * Examples:
         - [Get Games](queries/get-games.rq)
         - [Get images](queries/get-games-images.rq)
 
