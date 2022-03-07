@@ -63,38 +63,41 @@ pip install cow-csvw
 
 ### Run CoW
 
-- Export the games table to a `tableGames.csv` file to `./data`:
+- **Inputs** to `./data`:
+
   + [data/tableGames.csv](data/tableGames.csv)
   + [data/rulesetRegions.csv](data/rulesetRegions.csv)
   + [data/rulesetPeriods.csv](data/rulesetPeriods.csv)
 
-
-
-Generate the metadata file with CSVw mappings:
+- Generate the metadata file with CSVw mappings:
 
 ```powershell
 cow_tool build data/tableGames.csv
 ```
 
-Change the json file generated:
-* Change the base URI to w3id.org/ludeme
-* Add `propertyUrl` to map to our predicates (cf. https://www.w3.org/TR/tabular-data-primer/#property-names)
+- Change the json file generated:
 
-- Generated Skeleton Schema in `./data`:
+  * Change the base URI to w3id.org/ludeme
+  * Add `propertyUrl` to map to our predicates (cf. https://www.w3.org/TR/tabular-data-primer/#property-names)
+
+- **Generated JSON** Skeleton Schema in `./data`:
   + [tableGames.csv-metadata.json](data/tableGames.csv-metadata.json)
   + [rulesetRegions.csv-metadata.json](data/rulesetRegions.csv-metadata.json)
   + [rulesetPeriods.csv-metadata.json](data/rulesetPeriods.csv-metadata.json)
 
 
 
-Run the CSVw mappings to generate RDF:
+- Run the CSVw mappings to generate RDF:
 
 ```powershell
 cow_tool convert data/tableGames.csv
 ```
 
+- **Outputs** RDF files:
 
-### Outputs
+  + [data/tableGames.csv.nq](data/tableGames.csv.nq)
+  + [data/rulesetRegions.csv.nq](data/rulesetRegions.csv.nq)
+  + [data/rulesetPeriods.csv.nq](data/rulesetPeriods.csv.nq)
 
 
 
