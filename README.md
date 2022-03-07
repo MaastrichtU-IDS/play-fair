@@ -18,7 +18,8 @@ A RDF Knowledge graph for historical games:
 
 ## PLAY-FAIR Data Model
 
-<a href="http://www.ludeme.eu/"><img src="images/data-model.PNG" width="150px" height="150px" alt="Ludeme Project Logo" /></a>
+![](images/data-model.PNG)
+
 
 Concepts and properties are annotated with general ontologies
 
