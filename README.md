@@ -1,7 +1,7 @@
 
 # FAIR Data for Historical Games
 
-A RDF Knolwedge graph for hisotical games:
+A RDF Knowledge graph for historical games:
 
   + This is a repo for [CLARIAH Fellowship Call 2021](https://www.clariah.nl/news/clariah-fellowship-call-2021)
 
@@ -17,6 +17,8 @@ A RDF Knolwedge graph for hisotical games:
 > To make traditional games data Interoperable (the I in FAIR)
 
 ## PLAY-FAIR Data Model
+
+<a href="http://www.ludeme.eu/"><img src="images/data-model.PNG" width="150px" height="150px" alt="Ludeme Project Logo" /></a>
 
 Concepts and properties are annotated with general ontologies
 
@@ -46,7 +48,7 @@ Other sources from Museums to be integrated are currently investigated:
 
 - This is the list of API/database links to integrate:
     + Metropolitan Art Museum: https://github.com/metmuseum/openaccess/blob/master/MetObjects.csv
-    + The British Museum:no active sparql endpoint https://old.datahub.io/dataset/british-museum-collection or collection.britishmuseum.org/sparql
+    + The British Museum active sparql endpoint https://old.datahub.io/dataset/british-museum-collection or collection.britishmuseum.org/sparql
 
 
 
@@ -193,7 +195,7 @@ Want to learn more? Check out [PLAYFAIR Website!](https://www.clariah.nl/project
 
 _PLAYFAIR is a project of:_
 
-<a href="https://www.maastrichtuniversity.nl/research/institute-data-science"><img src="images/Logo_IDS.jpg" width="50px" height="50px" alt="Institute of Data Science" /></a>&emsp;&emsp;&emsp;&emsp;<a href="https://www.clariah.nl//"><img src="images/Logo_Clariah.png" alt="Clariah Logo" width="80px" height="80px"/></a>
+<a href="https://www.maastrichtuniversity.nl/research/institute-data-science"><img src="images/Logo_IDS.jpg" width="150px" height="70px" alt="Institute of Data Science" /></a>&emsp;&emsp;&emsp;&emsp;<a href="https://www.clariah.nl//"><img src="images/Logo_Clariah.png" alt="Clariah Logo" width="150px" height="50px"/></a>
 
 ---
 
