@@ -19,7 +19,7 @@ A RDF Knowledge graph for historical games:
 ## PLAY-FAIR Data Model
 
 <p align="center"> 
-	<img src="images/data-model.png"> 
+	<img src="images/data-model.PNG"> 
 </p>
 
 
