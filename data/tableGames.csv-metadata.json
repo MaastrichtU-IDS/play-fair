@@ -1,311 +1,314 @@
 {
- "@id": "https://w3id.org/ludeme/tableGames.csv",
- "@context": [
-  "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
-  {
-   "@language": "en",
-   "@base": "https://w3id.org/ludeme/game/"
-  },
-  {
-   "aat": "http://vocab.getty.edu/aat/",
-   "bibo": "http://purl.org/ontology/bibo/",
-   "bio": "http://purl.org/vocab/bio/0.1/",
-   "cidoc": "http://www.cidoc-crm.org/cidoc-crm/",
-   "csvw": "http://www.w3.org/ns/csvw#",
-   "dbo": "http://dbpedia.org/ontology/",
-   "dc": "http://purl.org/dc/terms/",
-   "dc11": "http://purl.org/dc/elements/1.1/",
-   "dcterms": "http://purl.org/dc/terms/",
-   "ecpo": "http://purl.org/ontology/ecpo#",
-   "foaf": "http://xmlns.com/foaf/0.1/",
-   "frbr": "http://purl.org/spar/frbr/core#",
-   "geo": "http://www.opengis.net/ont/geosparql#",
-   "geonames": "http://www.geonames.org/ontology#",
-   "gvp": "http://vocab.getty.edu/ontology#'",
-   "juso": "http://http://rdfs.co/juso/",
-   "np": "http://www.nanopub.org/nschema#",
-   "lemon": "http://lemon-model.net/lemon#",
-   "ludeme": "https://w3id.org/ludeme/" ,
-   "midi": "http://purl.org/midi-ld/midi#",
-   "owl": "http://www.w3.org/2002/07/owl#",
-   "periodo": "http://n2t.net/ark:/99152/p0v#",
-   "pnv": "https://www.lodewijkpetram.nl/vocab/pnv/doc/",
-   "prov": "http://www.w3.org/ns/prov#",
-   "qb": "http://purl.org/linked-data/cube#",
-   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-   "schema": "https://schema.org/",
-   "sem": "http://semanticweb.cs.vu.nl/2009/11/sem/",
-   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
-   "sdr": "https://iisg.amsterdam/",
-   "sdv": "https://iisg.amsterdam/vocab/",
-   "skos": "http://www.w3.org/2004/02/skos/core#",
-   "time": "http://www.w3.org/2006/time#",
-   "ulan": "http://vocab.getty.edu/ulan/",
-   "wgs84": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-   "xml": "http://www.w3.org/XML/1998/namespace/",
-   "xsd": "http://www.w3.org/2001/XMLSchema#"
-  }
- ],
- "url": "tableGames.csv",
- "dialect": {
-  "delimiter": ",",
-  "encoding": "utf-8",
-  "quoteChar": "\""
- },
- "dc:title": "tableGames.csv",
- "dcat:keyword": [],
- "dc:publisher": {
-  "schema:name": "IDS Institute of Data Science Maastricht University UM",
-  "schema:url": {
-   "@id": "http://datalegend.net"
-  }
- },
- "dc:license": {
-  "@id": "http://opendefinition.org/licenses/cc-by/"
- },
- "dc:modified": {
-  "@value": "2021-09-14",
-  "@type": "xsd:date"
- },
- "tableSchema": {
-  "columns": [
-    {
-        "virtual": "true",
-        "propertyUrl": "rdf:type",
-        "valueUrl": "https://schema.org/Game"
+    "@id": "https://w3id.org/ludeme/tableGames.csv",
+    "@context": [
+     "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
+     {
+      "@language": "en",
+      "@base": "https://w3id.org/ludeme/game/"
+     },
+     {
+      "aat": "http://vocab.getty.edu/aat/",
+      "bibo": "http://purl.org/ontology/bibo/",
+      "bio": "http://purl.org/vocab/bio/0.1/",
+      "cidoc": "http://www.cidoc-crm.org/cidoc-crm/",
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "dbo": "http://dbpedia.org/ontology/",
+      "dc": "http://purl.org/dc/terms/",
+      "dc11": "http://purl.org/dc/elements/1.1/",
+      "dcterms": "http://purl.org/dc/terms/",
+      "ecpo": "http://purl.org/ontology/ecpo#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "frbr": "http://purl.org/spar/frbr/core#",
+      "geo": "http://www.opengis.net/ont/geosparql#",
+      "geonames": "http://www.geonames.org/ontology#",
+      "gvp": "http://vocab.getty.edu/ontology#'",
+      "juso": "http://http://rdfs.co/juso/",
+      "np": "http://www.nanopub.org/nschema#",
+      "lemon": "http://lemon-model.net/lemon#",
+      "ludeme": "https://w3id.org/ludeme/" ,
+      "midi": "http://purl.org/midi-ld/midi#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "periodo": "http://n2t.net/ark:/99152/p0v#",
+      "pnv": "https://www.lodewijkpetram.nl/vocab/pnv/doc/",
+      "prov": "http://www.w3.org/ns/prov#",
+      "qb": "http://purl.org/linked-data/cube#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "schema": "https://schema.org/",
+      "sem": "http://semanticweb.cs.vu.nl/2009/11/sem/",
+      "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+      "sdr": "https://iisg.amsterdam/",
+      "sdv": "https://iisg.amsterdam/vocab/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "time": "http://www.w3.org/2006/time#",
+      "ulan": "http://vocab.getty.edu/ulan/",
+      "wgs84": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+      "xml": "http://www.w3.org/XML/1998/namespace/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+     }
+    ],
+    "url": "tableGames.csv",
+    "dialect": {
+     "delimiter": ",",
+     "encoding": "utf-8",
+     "quoteChar": "\""
     },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Id",
-    "name": "Id",
-    "titles": [
-     "Id"
-    ],
-    "dc:description": "Id",
-    "datatype": "integer"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Name",
-    "name": "Name",
-    "titles": [
-     "Name"
-    ],
-    "dc:description": "Name",
-    "propertyUrl": "rdfs:label",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/NativeName",
-    "name": "NativeName",
-    "titles": [
-     "NativeName"
-    ],
-    "dc:description": "NativeName",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Description",
-    "name": "Description",
-    "titles": [
-     "Description"
-    ],
-    "dc:description": "Description",
-    "propertyUrl": "dc:description",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/MainRuleset",
-    "name": "MainRuleset",
-    "titles": [
-     "MainRuleset"
-    ],
-    "schema:additionalProperty": "MainRuleset",
-    "propertyUrl": "schema:additionalProperty",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/LudiiRuleset",
-    "name": "LudiiRuleset",
-    "titles": [
-     "LudiiRuleset"
-    ],
-    "dc:description": "LudiiRuleset",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Reference",
-    "name": "Reference",
-    "titles": [
-     "Reference"
-    ],
-    "schema:citation": "Reference",
-    "propertyUrl": "schema:citation",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Origin",
-    "name": "Origin",
-    "titles": [
-     "Origin"
-    ],
-    "schema:countryOfOrigin": "Origin",
-    "propertyUrl": "schema:countryOfOrigin",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/DLPGame",
-    "name": "DLPGame",
-    "titles": [
-     "DLPGame"
-    ],
-    "schema:Project": "DLPGame",
-    "propertyUrl": "schema:Project" ,
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/PublicGame",
-    "name": "PublicGame",
-    "titles": [
-     "PublicGame"
-    ],
-    "ludeme:PublicGame": "PublicGame",
-    "propertyUrl": "ludeme:PublicGame",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/knownAliases",
-    "name": "knownAliases",
-    "titles": [
-     "knownAliases"
-    ],
-    "schema:alternateName": "knownAliases",
-    "propertyUrl": "schema:alternateName",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Author",
-    "name": "Author",
-    "titles": [
-     "Author"
-    ],
-    "schema:author": "Author",
-    "propertyUrl": "schema:author",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Publisher",
-    "name": "Publisher",
-    "titles": [
-     "Publisher"
-    ],
-    "schema:publisher": "Publisher",
-    "propertyUrl": "schema:publisher",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Date",
-    "name": "Date",
-    "titles": [
-     "Date"
-    ],
-    "schema:startTime": "Date",
-    "propertyUrl": "schema:startTime",
-    "datatype": "date"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/ProprietaryGame",
-    "name": "ProprietaryGame",
-    "titles": [
-     "ProprietaryGame"
-    ],
-    "dc:description": "ProprietaryGame",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Credit",
-    "name": "Credit",
-    "titles": [
-     "Credit"
-    ],
-    "ludeme:Credit": "Credit",
-    "propertyUrl": "ludeme:PublicGame",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/SeeAlso",
-    "name": "SeeAlso",
-    "titles": [
-     "SeeAlso"
-    ],
-    "schema:isRelatedTo": "SeeAlso",
-    "propertyUrl": "schema:isRelatedTo",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/BGGId",
-    "name": "BGGId",
-    "titles": [
-     "BGGId"
-    ],
-    "dc:description": "BGGId",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/OriginPoint",
-    "name": "OriginPoint",
-    "titles": [
-     "OriginPoint"
-    ],
-    "dc:description": "OriginPoint",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/EvidenceRange",
-    "name": "EvidenceRange",
-    "titles": [
-     "EvidenceRange"
-    ],
-    "dc:description": "EvidenceRange",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/WishlistGame",
-    "name": "WishlistGame",
-    "titles": [
-     "WishlistGame"
-    ],
-    "dc:description": "WishlistGame",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/Notes",
-    "name": "Notes",
-    "titles": [
-     "Notes"
-    ],
-    "dc:description": "Notes",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/HelpUs",
-    "name": "HelpUs",
-    "titles": [
-     "HelpUs"
-    ],
-    "dc:description": "HelpUs",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://w3id.org/ludeme/tableGames.csv/column/ForceRulesetInLud",
-    "name": "ForceRulesetInLud",
-    "titles": [
-     "ForceRulesetInLud"
-    ],
-    "dc:description": "ForceRulesetInLud",
-    "datatype": "string"
+    "dc:title": "tableGames.csv",
+    "dcat:keyword": [],
+    "dc:publisher": {
+     "schema:name": "IDS Institute of Data Science Maastricht University UM",
+     "schema:url": {
+      "@id": "http://datalegend.net"
+     }
+    },
+    "dc:license": {
+     "@id": "http://opendefinition.org/licenses/cc-by/"
+    },
+    "dc:modified": {
+     "@value": "2022-03-14",
+     "@type": "xsd:date"
+    },
+    "tableSchema": {
+     "columns": [
+       {
+           "virtual": "true",
+           "propertyUrl": "rdf:type",
+           "valueUrl": "https://schema.org/Game"
+       },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/Id",
+       "name": "Id",
+       "titles": [
+        "Id"
+       ],
+       "dc:description": "Id",
+       "datatype": "integer",
+       "propertyUrl":"schema:identifier"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/Name",
+       "name": "Name",
+       "titles": [
+        "Name"
+       ],
+       "dc:description": "Name",
+       "propertyUrl": "rdfs:label",
+       "datatype": "string"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/NativeName",
+       "name": "NativeName",
+       "titles": [
+        "NativeName"
+       ],
+       "dc:description": "NativeName",
+       "datatype": "string",
+       "propertyUrl":"schema:name"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/Description",
+       "name": "Description",
+       "titles": [
+        "Description"
+       ],
+       "dc:description": "Description",
+       "propertyUrl": "dc:description",
+       "datatype": "string"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/MainRuleset",
+       "name": "MainRuleset",
+       "titles": [
+        "MainRuleset"
+       ],
+       "propertyUrl": "ludeme:hasLuddiRulesets",
+       "valueUrl": "https://www.ludii.games/concepts.php?gameId={Id}",
+       "datatype":"integer"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/LudiiRuleset",
+       "name": "LudiiRuleset",
+       "titles": [
+        "LudiiRuleset"
+       ],
+       "propertyUrl": "ludeme:LudiiRuleset",
+       "valueUrl": "https://w3id.org/ludeme/ruleset/{MainRuleset}",
+       "datatype": "integer"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/Reference",
+       "name": "Reference",
+       "titles": [
+        "Reference"
+       ],
+       "schema:citation": "Reference",
+       "propertyUrl": "schema:citation",
+       "datatype": "string"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/Origin",
+       "name": "Origin",
+       "titles": [
+        "Origin"
+       ],
+       "schema:countryOfOrigin": "Origin",
+       "propertyUrl": "schema:countryOfOrigin",
+       "datatype": "string"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/DLPGame",
+       "name": "DLPGame",
+       "titles": [
+        "DLPGame"
+       ],
+       "schema:Project": "DLPGame",
+       "propertyUrl": "schema:Project" ,
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/PublicGame",
+       "name": "PublicGame",
+       "titles": [
+        "PublicGame"
+       ],
+       "ludeme:PublicGame": "PublicGame",
+       "propertyUrl": "ludeme:PublicGame",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/knownAliases",
+       "name": "knownAliases",
+       "titles": [
+        "knownAliases"
+       ],
+       "schema:alternateName": "knownAliases",
+       "propertyUrl": "schema:alternateName",
+       "datatype": "string"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/Author",
+       "name": "Author",
+       "titles": [
+        "Author"
+       ],
+       "schema:author": "Author",
+       "propertyUrl": "schema:author",
+       "datatype": "string"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/Publisher",
+       "name": "Publisher",
+       "titles": [
+        "Publisher"
+       ],
+       "schema:publisher": "Publisher",
+       "propertyUrl": "schema:publisher",
+       "datatype": "string"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/Date",
+       "name": "Date",
+       "titles": [
+        "Date"
+       ],
+       "schema:startTime": "Date",
+       "propertyUrl": "schema:startTime",
+       "datatype": "date"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/ProprietaryGame",
+       "name": "ProprietaryGame",
+       "titles": [
+        "ProprietaryGame"
+       ],
+       "dc:description": "ProprietaryGame",
+       "datatype": "string"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/Credit",
+       "name": "Credit",
+       "titles": [
+        "Credit"
+       ],
+       "ludeme:Credit": "Credit",
+       "propertyUrl": "ludeme:PublicGame",
+       "datatype": "string"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/SeeAlso",
+       "name": "SeeAlso",
+       "titles": [
+        "SeeAlso"
+       ],
+       "schema:isRelatedTo": "SeeAlso",
+       "propertyUrl": "schema:isRelatedTo",
+       "datatype": "string"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/BGGId",
+       "name": "BGGId",
+       "titles": [
+        "BGGId"
+       ],
+       "dc:description": "BGGId",
+       "datatype": "string"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/OriginPoint",
+       "name": "OriginPoint",
+       "titles": [
+        "OriginPoint"
+       ],
+       "dc:description": "OriginPoint",
+       "datatype": "string"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/EvidenceRange",
+       "name": "EvidenceRange",
+       "titles": [
+        "EvidenceRange"
+       ],
+       "dc:description": "EvidenceRange",
+       "datatype": "string"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/WishlistGame",
+       "name": "WishlistGame",
+       "titles": [
+        "WishlistGame"
+       ],
+       "dc:description": "WishlistGame",
+       "datatype": "string"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/Notes",
+       "name": "Notes",
+       "titles": [
+        "Notes"
+       ],
+       "dc:description": "Notes",
+       "datatype": "string"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/HelpUs",
+       "name": "HelpUs",
+       "titles": [
+        "HelpUs"
+       ],
+       "dc:description": "HelpUs",
+       "datatype": "string"
+      },
+      {
+       "@id": "https://w3id.org/ludeme/tableGames.csv/column/ForceRulesetInLud",
+       "name": "ForceRulesetInLud",
+       "titles": [
+        "ForceRulesetInLud"
+       ],
+       "dc:description": "ForceRulesetInLud",
+       "datatype": "string"
+      }
+     ],
+     "primaryKey": "Id",
+     "aboutUrl": "{Id}"
+    }
    }
-  ],
-  "primaryKey": "Id",
-  "aboutUrl": "{Id}"
- }
-}

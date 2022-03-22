@@ -19,11 +19,11 @@ class color:
 g = ConjunctiveGraph()
 g.parse("data/tableGames.csv.nq", format='nquads')
 
-df = pd.read_csv("data/collections-britishM.csv")
+df = pd.read_csv("./data/collections-britishM.csv")
 
 rich_g = ConjunctiveGraph()
 
-graph_uri = URIRef('https://w3id.org/ludeme/graph/pictures')
+graph_uri = URIRef('https://w3id.org/ludeme/images')
 
 # def check_uri(uri):
 #     if str(uri).startswith('http://') or str(uri).startswith('https://'):
@@ -37,29 +37,34 @@ for s, p, o in g.triples((None, RDFS.label, None)):
 
     # Find rows in british collection that match our Ludeme game
     # TODO: improve the matching process (we just do basic matching right now)
-    pic_df = df[df['Description'].str.contains(game_label)]
+    pic_df = df[df['Description'].str.contains(game_label, case = False)]
 
     if len(pic_df) > 0:
         print(f"✅ Found {color.BOLD}{len(pic_df)}{color.END} entries for {color.YELLOW}{color.BOLD}{game_label}{color.END} in the British Museum Collection")
 
     for index, row in pic_df.iterrows():
         try:
-            rich_g.add((s, URIRef('http://picture'), URIRef(row['Image']), graph_uri))
+            rich_g.add((s, URIRef('https://schema.org/image'), URIRef(row['Image']), graph_uri))
         except Exception as e:
             pass
 
         try:
-            rich_g.add((s, URIRef('http://date'), Literal(row['Production date']), graph_uri))
+            rich_g.add((s, URIRef('https://schema.org/productionDate'), Literal(row['Production date']), graph_uri))
         except Exception as e:
             pass
 
         try:
-            rich_g.add((s, URIRef('http://cultures'), Literal(row['Culture']), graph_uri))
+            rich_g.add((s, URIRef('https://www.wikidata.org/wiki/Q11514315'), Literal(row['Culture']), graph_uri))
         except Exception as e:
             pass
 
         try:
-            rich_g.add((s, URIRef('http://museum_number'), Literal(row['Museum number']), graph_uri))
+            rich_g.add((s, URIRef('https://schema.org/identifier'), Literal(row['Museum number']), graph_uri))
+        except Exception as e:
+            pass
+
+        try:
+            rich_g.add((s, URIRef('https://schema.org/material'), Literal(row['Materials']), graph_uri))
         except Exception as e:
             pass
 

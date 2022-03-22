@@ -1,0 +1,5 @@
+cow-csvw
+mysql-connector-python
+pandas
+#psycopg2
+#mariadb

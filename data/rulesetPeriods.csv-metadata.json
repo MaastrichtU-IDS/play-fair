@@ -4,13 +4,14 @@
   "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
   {
    "@language": "en",
-   "@base": "https://w3id.org/ludeme/ruleset/"
+   "@base": "https://iisg.amsterdam/"
   },
   {
    "aat": "http://vocab.getty.edu/aat/",
    "bibo": "http://purl.org/ontology/bibo/",
    "bio": "http://purl.org/vocab/bio/0.1/",
    "cidoc": "http://www.cidoc-crm.org/cidoc-crm/",
+   "civ": "https://iisg.amsterdam/id/civ/",
    "csvw": "http://www.w3.org/ns/csvw#",
    "dbo": "http://dbpedia.org/ontology/",
    "dc": "http://purl.org/dc/terms/",
@@ -21,7 +22,7 @@
    "frbr": "http://purl.org/spar/frbr/core#",
    "geo": "http://www.opengis.net/ont/geosparql#",
    "geonames": "http://www.geonames.org/ontology#",
-   "gvp": "http://vocab.getty.edu/ontology#'",
+   "gvp": "http://vocab.getty.edu/ontology#",
    "juso": "http://http://rdfs.co/juso/",
    "lemon": "http://lemon-model.net/lemon#",
    "midi": "http://purl.org/midi-ld/midi#",
@@ -33,7 +34,7 @@
    "qb": "http://purl.org/linked-data/cube#",
    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-   "schema": "https://schema.org/",
+   "schema": "http://schema.org/",
    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
    "sdr": "https://iisg.amsterdam/",
    "sdv": "https://iisg.amsterdam/vocab/",
@@ -43,7 +44,6 @@
    "ulan": "http://vocab.getty.edu/ulan/",
    "wgs84": "http://www.w3.org/2003/01/geo/wgs84_pos#",
    "xml": "http://www.w3.org/XML/1998/namespace/",
-   "wiki": "http://www.wikidata.org/entity/#" ,
    "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
  ],
@@ -60,63 +60,60 @@
   "schema:url": {
    "@id": "http://datalegend.net"
   }
-},
-"dc:license": {
- "@id": "http://opendefinition.org/licenses/cc-by/"
-},
-"dc:modified": {
- "@value": "2022-02-14",
- "@type": "xsd:date"
-},
-"tableSchema": {
- "columns": [
-  {
+ },
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:modified": {
+  "@value": "2022-03-21",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "columns": [
+   {
     "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/GameId",
+    "name": "GameId",
     "titles": [
      "GameId"
     ],
-    "propertyUrl": "rdfs:defines",
-    "valueUrl": "https://w3id.org/ludeme/game/{GameId}"
+    "dc:description": "GameId",
+    "datatype": "string"
    },
-  {
-   "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/RulesetId",
-   "name": "RulesetId",
-   "titles": [
-    "RulesetId"
-   ],
-   "schema:identifier": "RulesetId",
-   "propertyUrl": "schema:identifier",
-   "datatype": "integer"
-  },
-  {
-   "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/GameName",
-   "name": "GameName",
-   "titles": [
-    "GameName"
-   ],
-   "rdfs:label": "GameName",
-   "propertyUrl": "rdfs:label",
-   "datatype": "string"
-  },
-  {
-   "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/RulesetName",
-   "name": "RulesetName",
-   "titles": [
-    "RulesetName"
-   ],
-   "rdfs:label": "RulesetName",
-   "propertyUrl": "rdfs:label",
-   "datatype": "string"
-  },
+   {
+    "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/RulesetId",
+    "name": "RulesetId",
+    "titles": [
+     "RulesetId"
+    ],
+    "dc:description": "RulesetId",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/GameName",
+    "name": "GameName",
+    "titles": [
+     "GameName"
+    ],
+    "dc:description": "GameName",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/RulesetName",
+    "name": "RulesetName",
+    "titles": [
+     "RulesetName"
+    ],
+    "dc:description": "RulesetName",
+    "datatype": "string"
+   },
    {
     "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/Ancient",
     "name": "Ancient",
     "titles": [
      "Ancient"
     ],
-    "wiki:Q435608": "Ancient",
-    "propertyUrl": "wiki:Q435608",
-    "datatype": "boolean"
+    "dc:description": "Ancient",
+    "datatype": "string"
    },
    {
     "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/Medieval",
@@ -124,9 +121,8 @@
     "titles": [
      "Medieval"
     ],
-    "wiki:Q12554": "Medieval",
-    "propertyUrl": "wiki:Q12554",
-    "datatype": "boolean"
+    "dc:description": "Medieval",
+    "datatype": "string"
    },
    {
     "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/Modern",
@@ -134,9 +130,8 @@
     "titles": [
      "Modern"
     ],
-    "wiki:Q3281534": "Modern",
-    "propertyUrl": "wiki:Q3281534",
-    "datatype": "boolean"
+    "dc:description": "Modern",
+    "datatype": "string"
    },
    {
     "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/Very_Early_Medieval",
@@ -144,9 +139,8 @@
     "titles": [
      "Very Early Medieval"
     ],
-    "wiki:Q3281534": "Very Early Medieval",
-    "propertyUrl": "wiki:Q3281534",
-    "datatype": "boolean"
+    "dc:description": "Very Early Medieval",
+    "datatype": "string"
    },
    {
     "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/Early_Medieval",
@@ -154,9 +148,8 @@
     "titles": [
      "Early Medieval"
     ],
-    "wiki:Q202763": "Early Medieval",
-    "propertyUrl": "wiki:Q202763",
-    "datatype": "boolean"
+    "dc:description": "Early Medieval",
+    "datatype": "string"
    },
    {
     "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/Late_Medieval",
@@ -164,9 +157,8 @@
     "titles": [
      "Late Medieval"
     ],
-    "wiki:Q212976": "Late Medieval",
-    "propertyUrl": "wiki:Q212976",
-    "datatype": "boolean"
+    "dc:description": "Late Medieval",
+    "datatype": "string"
    },
    {
     "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/Very_Late_Medieval",
@@ -174,9 +166,8 @@
     "titles": [
      "Very Late Medieval"
     ],
-    "wiki:Q212976": "Late Medieval",
-    "propertyUrl": "wiki:Q212976",
-    "datatype": "boolean"
+    "dc:description": "Very Late Medieval",
+    "datatype": "string"
    },
    {
     "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/1500s",
@@ -184,9 +175,8 @@
     "titles": [
      "1500s"
     ],
-    "wiki:Q44140": "1500s",
-    "propertyUrl": "wiki:Q44140",
-    "datatype": "boolean"
+    "dc:description": "1500s",
+    "datatype": "string"
    },
    {
     "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/1600s",
@@ -194,9 +184,8 @@
     "titles": [
      "1600s"
     ],
-    "wiki:Q42995": "1600s",
-    "propertyUrl": "wiki:Q42995",
-    "datatype": "boolean"
+    "dc:description": "1600s",
+    "datatype": "string"
    },
    {
     "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/1700s",
@@ -204,9 +193,8 @@
     "titles": [
      "1700s"
     ],
-    "wiki:Q43370": "1700s",
-    "propertyUrl": "wiki:Q43370",
-    "datatype": "boolean"
+    "dc:description": "1700s",
+    "datatype": "string"
    },
    {
     "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/1800s",
@@ -214,9 +202,8 @@
     "titles": [
      "1800s"
     ],
-    "wiki:Q39577": "1800s",
-    "propertyUrl": "wiki:Q39577",
-    "datatype": "boolean"
+    "dc:description": "1800s",
+    "datatype": "string"
    },
    {
     "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/1900s",
@@ -224,9 +211,8 @@
     "titles": [
      "1900s"
     ],
-    "wiki:Q36574": "1900s",
-    "propertyUrl": "wiki:Q36574",
-    "datatype": "boolean"
+    "dc:description": "1900s",
+    "datatype": "string"
    },
    {
     "@id": "https://iisg.amsterdam/rulesetPeriods.csv/column/2000s",
@@ -234,12 +220,11 @@
     "titles": [
      "2000s"
     ],
-    "wiki:Q35024": "2000s",
-    "propertyUrl": "wiki:Q35024",
-    "datatype": "boolean"
+    "dc:description": "2000s",
+    "datatype": "string"
    }
   ],
-  "primaryKey": "RulesetId",
-  "aboutUrl": "{RulesetId}"
+  "primaryKey": "GameId",
+  "aboutUrl": "{_row}"
  }
 }

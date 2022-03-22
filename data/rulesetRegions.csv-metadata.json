@@ -1,325 +1,330 @@
 {
- "@id": "https://iisg.amsterdam/rulesetRegions.csv",
- "@context": [
-  "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
-  {
-   "@language": "en",
-   "@base": "https://w3id.org/ludeme/ruleset/"
-  },
-  {
-   "aat": "http://vocab.getty.edu/aat/",
-   "bibo": "http://purl.org/ontology/bibo/",
-   "bio": "http://purl.org/vocab/bio/0.1/",
-   "cidoc": "http://www.cidoc-crm.org/cidoc-crm/",
-   "csvw": "http://www.w3.org/ns/csvw#",
-   "dbo": "http://dbpedia.org/ontology/",
-   "dc": "http://purl.org/dc/terms/",
-   "dc11": "http://purl.org/dc/elements/1.1/",
-   "dcterms": "http://purl.org/dc/terms/",
-   "ecpo": "http://purl.org/ontology/ecpo#",
-   "foaf": "http://xmlns.com/foaf/0.1/",
-   "frbr": "http://purl.org/spar/frbr/core#",
-   "geo": "http://www.opengis.net/ont/geosparql#",
-   "geonames": "http://www.geonames.org/ontology#",
-   "gvp": "http://vocab.getty.edu/ontology#'",
-   "juso": "http://http://rdfs.co/juso/",
-   "lemon": "http://lemon-model.net/lemon#",
-   "midi": "http://purl.org/midi-ld/midi#",
-   "np": "http://www.nanopub.org/nschema#",
-   "owl": "http://www.w3.org/2002/07/owl#",
-   "periodo": "http://n2t.net/ark:/99152/p0v#",
-   "pnv": "https://www.lodewijkpetram.nl/vocab/pnv/doc/",
-   "prov": "http://www.w3.org/ns/prov#",
-   "qb": "http://purl.org/linked-data/cube#",
-   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-   "schema": "https://schema.org/",
-   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
-   "sdr": "https://iisg.amsterdam/",
-   "sdv": "https://iisg.amsterdam/vocab/",
-   "sem": "http://semanticweb.cs.vu.nl/2009/11/sem/",
-   "skos": "http://www.w3.org/2004/02/skos/core#",
-   "time": "http://www.w3.org/2006/time#",
-   "ulan": "http://vocab.getty.edu/ulan/",
-   "wgs84": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-   "wiki": "http://www.wikidata.org/entity/#" ,
-   "xml": "http://www.w3.org/XML/1998/namespace/",
-   "xsd": "http://www.w3.org/2001/XMLSchema#"
-  }
- ],
- "url": "rulesetRegions.csv",
- "dialect": {
-  "delimiter": ",",
-  "encoding": "ISO-8859-1",
-  "quoteChar": "\""
- },
- "dc:title": "rulesetRegions.csv",
- "dcat:keyword": [],
- "dc:publisher": {
-  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
-  "schema:url": {
-   "@id": "http://datalegend.net"
-  }
- },
- "dc:license": {
-  "@id": "http://opendefinition.org/licenses/cc-by/"
- },
- "dc:modified": {
-  "@value": "2022-02-14",
-  "@type": "xsd:date"
- },
- "tableSchema": {
-  "columns": [
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/GameId",
-    "titles": [
-     "GameId"
+    "@id": "https://iisg.amsterdam/rulesetRegions.csv",
+    "@context": [
+     "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
+     {
+      "@language": "en",
+      "@base": "https://w3id.org/ludeme/ruleset/"
+     },
+     {
+      "aat": "http://vocab.getty.edu/aat/",
+      "bibo": "http://purl.org/ontology/bibo/",
+      "bio": "http://purl.org/vocab/bio/0.1/",
+      "cidoc": "http://www.cidoc-crm.org/cidoc-crm/",
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "dbo": "http://dbpedia.org/ontology/",
+      "dc": "http://purl.org/dc/terms/",
+      "dc11": "http://purl.org/dc/elements/1.1/",
+      "dcterms": "http://purl.org/dc/terms/",
+      "ecpo": "http://purl.org/ontology/ecpo#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "frbr": "http://purl.org/spar/frbr/core#",
+      "geo": "http://www.opengis.net/ont/geosparql#",
+      "geonames": "http://www.geonames.org/ontology#",
+      "gvp": "http://vocab.getty.edu/ontology#'",
+      "juso": "http://http://rdfs.co/juso/",
+      "lemon": "http://lemon-model.net/lemon#",
+      "midi": "http://purl.org/midi-ld/midi#",
+      "np": "http://www.nanopub.org/nschema#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "periodo": "http://n2t.net/ark:/99152/p0v#",
+      "pnv": "https://www.lodewijkpetram.nl/vocab/pnv/doc/",
+      "prov": "http://www.w3.org/ns/prov#",
+      "qb": "http://purl.org/linked-data/cube#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "schema": "https://schema.org/",
+      "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+      "sdr": "https://iisg.amsterdam/",
+      "sdv": "https://iisg.amsterdam/vocab/",
+      "sem": "http://semanticweb.cs.vu.nl/2009/11/sem/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "time": "http://www.w3.org/2006/time#",
+      "ulan": "http://vocab.getty.edu/ulan/",
+      "wgs84": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+      "wiki": "http://www.wikidata.org/entity/#" ,
+      "xml": "http://www.w3.org/XML/1998/namespace/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+     }
     ],
-    "propertyUrl": "rdfs:defines",
-    "valueUrl": "https://w3id.org/ludeme/game/{GameId}"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/RulesetName",
-    "name": "RulesetName",
-    "titles": [
-     "RulesetName"
-    ],
-    "rdfs:label": "RulesetName",
-    "propertyUrl": "rdfs:label",
-    "datatype": "string"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Eastern_Africa",
-    "name": "Eastern Africa",
-    "titles": [
-     "Eastern Africa"
-    ],
-    "geonames:7729889": "Eastern Africa",
-    "propertyUrl": "geonames:7729889",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Middle_Africa",
-    "name": "Middle Africa",
-    "titles": [
-     "Middle Africa"
-    ],
-    "geonames:7729886": "Middle Africa",
-    "propertyUrl": "geonames:7729886",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Northern_Africa",
-    "name": "Northern Africa",
-    "titles": [
-     "Northern Africa"
-    ],
-    "geonames:7729887": "Northern Africa",
-    "propertyUrl": "geonames:7729887",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Southern_Africa",
-    "name": "Southern Africa",
-    "titles": [
-     "Southern Africa"
-    ],
-    "geonames:7729885": "Southern Africa",
-    "propertyUrl": "geonames:7729885",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Western_Africa",
-    "name": "Western Africa",
-    "titles": [
-     "Western Africa"
-    ],
-    "geonames:7729887": "Western Africa",
-    "propertyUrl": "geonames:7729887",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Central_America",
-    "name": "Central America",
-    "titles": [
-     "Central America"
-    ],
-    "geonames:7729892": "Central America",
-    "propertyUrl": "geonames:7729892",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Northern_America",
-    "name": "Northern America",
-    "titles": [
-     "Northern America"
-    ],
-    "geonames:7729890": "Northern America",
-    "propertyUrl": "geonames:7729890",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/South_America",
-    "name": "South America",
-    "titles": [
-     "South America"
-    ],
-    "geonames:6255150": "South America",
-    "propertyUrl": "geonames:6255150",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Central_Asia",
-    "name": "Central Asia",
-    "titles": [
-     "Central Asia"
-    ],
-    "geonames:7729893": "Central Asia",
-    "propertyUrl": "geonames:7729893",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Northern_Asia",
-    "name": "Northern Asia",
-    "titles": [
-     "Northern Asia"
-    ],
-    "wiki:Q27329": "Northern Asia",
-    "propertyUrl": "wiki:Q27329",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Eastern_Asia",
-    "name": "Eastern Asia",
-    "titles": [
-     "Eastern Asia"
-    ],
-    "geonames:7729894": "Eastern Asia",
-    "propertyUrl": "geonames:7729894",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Southeastern_Asia",
-    "name": "Southeastern Asia",
-    "titles": [
-     "Southeastern Asia"
-    ],
-    "geonames:7729896": "Southeastern Asia",
-    "propertyUrl": "geonames:7729896",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Southern_Asia",
-    "name": "Southern Asia",
-    "titles": [
-     "Southern Asia"
-    ],
-    "geonames:7729895": "Southern Asia",
-    "propertyUrl": "geonames:7729895",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Western_Asia",
-    "name": "Western Asia",
-    "titles": [
-     "Western Asia"
-    ],
-    "geonames:7729897": "Western Asia",
-    "propertyUrl": "geonames:7729897",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Australia_and_New_Zealand",
-    "name": "Australia and New Zealand",
-    "titles": [
-     "Australia and New Zealand"
-    ],
-    "geonames:7729898": "Australia and New Zealand",
-    "propertyUrl": "geonames:7729898",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Caribbean",
-    "name": "Caribbean",
-    "titles": [
-     "Caribbean"
-    ],
-    "geonames:7729891": "Caribbean",
-    "propertyUrl": "geonames:7729891",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Eastern_Europe",
-    "name": "Eastern Europe",
-    "titles": [
-     "Eastern Europe"
-    ],
-    "geonames:7729884": "Eastern Europe",
-    "propertyUrl": "geonames:7729884",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Northern_Europe",
-    "name": "Northern Europe",
-    "titles": [
-     "Northern Europe"
-    ],
-    "geonames:7729883": "Northern Europe",
-    "propertyUrl": "geonames:7729883",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Southern_Europe",
-    "name": "Southern Europe",
-    "titles": [
-     "Southern Europe"
-    ],
-    "geonames:9408658": "Southern Europe",
-    "propertyUrl": "geonames:9408658",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Western_Europe",
-    "name": "Western Europe",
-    "titles": [
-     "Western Europe"
-    ],
-    "geonames:9408659": "Western Europe",
-    "propertyUrl": "geonames:9408659",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Melanesia",
-    "name": "Melanesia",
-    "titles": [
-     "Melanesia"
-    ],
-    "geonames:7729899": "Melanesia",
-    "propertyUrl": "geonames:7729899",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Micronesia",
-    "name": "Micronesia",
-    "titles": [
-     "Micronesia"
-    ],
-    "geonames:7729900": "Micronesia",
-    "propertyUrl": "geonames:7729900",
-    "datatype": "boolean"
-   },
-   {
-    "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Polynesia",
-    "name": "Polynesia",
-    "titles": [
-     "Polynesia"
-    ],
-    "geonames:7729901": "Polynesia",
-    "propertyUrl": "geonames:7729901",
-    "datatype": "boolean"
+    "url": "rulesetRegions.csv",
+    "dialect": {
+     "delimiter": ",",
+     "encoding": "ISO-8859-1",
+     "quoteChar": "\""
+    },
+    "dc:title": "rulesetRegions.csv",
+    "dcat:keyword": [],
+    "dc:publisher": {
+     "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+     "schema:url": {
+      "@id": "http://datalegend.net"
+     }
+    },
+    "dc:license": {
+     "@id": "http://opendefinition.org/licenses/cc-by/"
+    },
+    "dc:modified": {
+     "@value": "2022-02-14",
+     "@type": "xsd:date"
+    },
+    "tableSchema": {
+     "columns": [
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/GameId",
+       "titles": [
+        "GameId"
+       ],
+       "propertyUrl": "rdfs:defines",
+       "valueUrl": "https://w3id.org/ludeme/game/{GameId}"
+      },
+      {
+        "virtual": "true",
+        "propertyUrl": "rdf:type",
+        "valueUrl": "https://www.ludii.games/concepts.php?variantId={GameId}"
+    },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/RulesetName",
+       "name": "RulesetName",
+       "titles": [
+        "RulesetName"
+       ],
+       "rdfs:label": "RulesetName",
+       "propertyUrl": "rdfs:label",
+       "datatype": "string"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Eastern_Africa",
+       "name": "Eastern Africa",
+       "titles": [
+        "Eastern Africa"
+       ],
+       "geonames:7729889": "Eastern Africa",
+       "propertyUrl": "geonames:7729889",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Middle_Africa",
+       "name": "Middle Africa",
+       "titles": [
+        "Middle Africa"
+       ],
+       "geonames:7729886": "Middle Africa",
+       "propertyUrl": "geonames:7729886",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Northern_Africa",
+       "name": "Northern Africa",
+       "titles": [
+        "Northern Africa"
+       ],
+       "geonames:7729887": "Northern Africa",
+       "propertyUrl": "geonames:7729887",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Southern_Africa",
+       "name": "Southern Africa",
+       "titles": [
+        "Southern Africa"
+       ],
+       "geonames:7729885": "Southern Africa",
+       "propertyUrl": "geonames:7729885",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Western_Africa",
+       "name": "Western Africa",
+       "titles": [
+        "Western Africa"
+       ],
+       "geonames:7729887": "Western Africa",
+       "propertyUrl": "geonames:7729887",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Central_America",
+       "name": "Central America",
+       "titles": [
+        "Central America"
+       ],
+       "geonames:7729892": "Central America",
+       "propertyUrl": "geonames:7729892",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Northern_America",
+       "name": "Northern America",
+       "titles": [
+        "Northern America"
+       ],
+       "geonames:7729890": "Northern America",
+       "propertyUrl": "geonames:7729890",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/South_America",
+       "name": "South America",
+       "titles": [
+        "South America"
+       ],
+       "geonames:6255150": "South America",
+       "propertyUrl": "geonames:6255150",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Central_Asia",
+       "name": "Central Asia",
+       "titles": [
+        "Central Asia"
+       ],
+       "geonames:7729893": "Central Asia",
+       "propertyUrl": "geonames:7729893",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Northern_Asia",
+       "name": "Northern Asia",
+       "titles": [
+        "Northern Asia"
+       ],
+       "wiki:Q27329": "Northern Asia",
+       "propertyUrl": "wiki:Q27329",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Eastern_Asia",
+       "name": "Eastern Asia",
+       "titles": [
+        "Eastern Asia"
+       ],
+       "geonames:7729894": "Eastern Asia",
+       "propertyUrl": "geonames:7729894",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Southeastern_Asia",
+       "name": "Southeastern Asia",
+       "titles": [
+        "Southeastern Asia"
+       ],
+       "geonames:7729896": "Southeastern Asia",
+       "propertyUrl": "geonames:7729896",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Southern_Asia",
+       "name": "Southern Asia",
+       "titles": [
+        "Southern Asia"
+       ],
+       "geonames:7729895": "Southern Asia",
+       "propertyUrl": "geonames:7729895",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Western_Asia",
+       "name": "Western Asia",
+       "titles": [
+        "Western Asia"
+       ],
+       "geonames:7729897": "Western Asia",
+       "propertyUrl": "geonames:7729897",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Australia_and_New_Zealand",
+       "name": "Australia and New Zealand",
+       "titles": [
+        "Australia and New Zealand"
+       ],
+       "geonames:7729898": "Australia and New Zealand",
+       "propertyUrl": "geonames:7729898",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Caribbean",
+       "name": "Caribbean",
+       "titles": [
+        "Caribbean"
+       ],
+       "geonames:7729891": "Caribbean",
+       "propertyUrl": "geonames:7729891",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Eastern_Europe",
+       "name": "Eastern Europe",
+       "titles": [
+        "Eastern Europe"
+       ],
+       "geonames:7729884": "Eastern Europe",
+       "propertyUrl": "geonames:7729884",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Northern_Europe",
+       "name": "Northern Europe",
+       "titles": [
+        "Northern Europe"
+       ],
+       "geonames:7729883": "Northern Europe",
+       "propertyUrl": "geonames:7729883",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Southern_Europe",
+       "name": "Southern Europe",
+       "titles": [
+        "Southern Europe"
+       ],
+       "geonames:9408658": "Southern Europe",
+       "propertyUrl": "geonames:9408658",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Western_Europe",
+       "name": "Western Europe",
+       "titles": [
+        "Western Europe"
+       ],
+       "geonames:9408659": "Western Europe",
+       "propertyUrl": "geonames:9408659",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Melanesia",
+       "name": "Melanesia",
+       "titles": [
+        "Melanesia"
+       ],
+       "geonames:7729899": "Melanesia",
+       "propertyUrl": "geonames:7729899",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Micronesia",
+       "name": "Micronesia",
+       "titles": [
+        "Micronesia"
+       ],
+       "geonames:7729900": "Micronesia",
+       "propertyUrl": "geonames:7729900",
+       "datatype": "boolean"
+      },
+      {
+       "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Polynesia",
+       "name": "Polynesia",
+       "titles": [
+        "Polynesia"
+       ],
+       "geonames:7729901": "Polynesia",
+       "propertyUrl": "geonames:7729901",
+       "datatype": "boolean"
+      }
+     ],
+     "primaryKey": "RulesetId",
+     "aboutUrl": "{RulesetId}"
+    }
    }
-  ],
-  "primaryKey": "RulesetId",
-  "aboutUrl": "{RulesetId}"
- }
-}
