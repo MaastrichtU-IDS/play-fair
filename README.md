@@ -25,9 +25,9 @@ A RDF Knowledge graph for traditional games:
 
 Concepts and properties are annotated with general ontologies
 
-+ [Data Model Game table](model/data-model.md)
-+ [Data Model Ruleset Regions](model/data-model-regions.md)
-+ [Data Model Ruleset Periods](model/data-model-periods.md)
++ [Data Model Game table](model/data-model.md) - describes a Game
++ [Data Model Ruleset Regions](model/data-model-regions.md) - describes the rulesets of a Game given geographical regions
++ [Data Model Ruleset Periods](model/data-model-periods.md) - describes the rulesets of a Game given historical periods
 
 
 ## Data Identification & Argumentation
@@ -196,7 +196,10 @@ helm uninstall mysql
 
 Want to learn more? Check out [PLAYFAIR Website!](https://www.clariah.nl/projects?page=2/)
 
-_PLAYFAIR is a project of:_
+---
+
+### Acknowledgement
+PLAYFAIR is funded by [CLARIAH Fellowship Call 2021](https://www.clariah.nl/news/clariah-fellowship-call-2021):
 
 <a href="https://www.maastrichtuniversity.nl/research/institute-data-science"><img src="images/Logo_IDS.jpg" width="150px" height="70px" alt="Institute of Data Science" /></a>&emsp;&emsp;&emsp;&emsp;<a href="https://www.clariah.nl//"><img src="images/Logo_Clariah.png" alt="Clariah Logo" width="150px" height="50px"/></a>
 

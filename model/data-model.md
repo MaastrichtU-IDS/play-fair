@@ -1,4 +1,5 @@
-### Example RDF (turtle):
+### RDF for description of a game: senet and object details
+This module describes the data element of a game (e.g "Senet"). These elements, defined by the Ludeme project, can be found on the [Structure of Game Table](https://ludii.games/downloads/DLP_Database_Guide.pdf) and the dataset in [this link](data/tableGames.csv).
 
 ```ttl
 @prefix : <http://mapping.example.com/> .
@@ -31,10 +32,8 @@
 #   dc:description "Senet is one of the oldest board games known in the world, documented from about 3000 BCE until the first millennium BCE in Egypt. It was also played In Cyprus for most of that time, and played at different times in the Levant. Though a full ruleset has never been found, hints from texts and tomb paintings in Egypt give us clues about the manner in which it was likely played. The game was also heavily imbued with religious significance, as the board itself represented the journey through the afterlife.";
 #   rdfs:label "Senet" .
 
-## From Table 1: Structure of Game Table https://ludii.games/downloads/DLP_Database_Guide.pdf
 
 
-# rdf for description of a game: senet and object details
 <https://ludii.games/identifier.php?Id=DLP.Games.3> a schema:Game ; # https://ludii.games/details.php?keyword=Senet
     schema:additionalType schema:DiscoverAction ;
     dcterms:object "http://vocab.getty.edu/aat/300222752" ; #related vocabularies for game object or wiki: https://www.wikidata.org/wiki/Q131436
