@@ -192,10 +192,6 @@ helm uninstall mysql
 ```
 
 
-### Website
-
-Want to learn more? Check out [PLAYFAIR Website!](https://www.clariah.nl/projects?page=2/)
-
 ---
 
 ### Acknowledgement
