@@ -22,6 +22,7 @@
       "geo": "http://www.opengis.net/ont/geosparql#",
       "geonames": "http://www.geonames.org/ontology#",
       "gvp": "http://vocab.getty.edu/ontology#'",
+      "getty": "http://vocab.getty.edu/aat/",
       "juso": "http://http://rdfs.co/juso/",
       "np": "http://www.nanopub.org/nschema#",
       "lemon": "http://lemon-model.net/lemon#",
@@ -75,6 +76,11 @@
            "propertyUrl": "rdf:type",
            "valueUrl": "https://schema.org/Game"
        },
+       {
+           "virtual": "true",
+           "propertyUrl":"schema:sameAs",
+           "valueUrl": "getty:300217912"
+       },
       {
        "@id": "https://w3id.org/ludeme/tableGames.csv/column/Id",
        "name": "Id",
@@ -83,7 +89,8 @@
        ],
        "dc:description": "Id",
        "datatype": "integer",
-       "propertyUrl":"schema:identifier"
+       "propertyUrl":"schema:identifier",
+       "valueUrl": "DLP.Games.{Id}"
       },
       {
        "@id": "https://w3id.org/ludeme/tableGames.csv/column/Name",
@@ -121,7 +128,7 @@
        "titles": [
         "MainRuleset"
        ],
-       "propertyUrl": "ludeme:hasLuddiRulesets",
+       "propertyUrl": "ludeme:Ruleset",
        "valueUrl": "https://www.ludii.games/concepts.php?gameId={Id}",
        "datatype":"integer"
       },
@@ -131,7 +138,7 @@
        "titles": [
         "LudiiRuleset"
        ],
-       "propertyUrl": "ludeme:LudiiRuleset",
+       "propertyUrl": "schema:gameItem",
        "valueUrl": "https://w3id.org/ludeme/ruleset/{MainRuleset}",
        "datatype": "integer"
       },
@@ -161,9 +168,9 @@
        "titles": [
         "DLPGame"
        ],
-       "schema:Project": "DLPGame",
-       "propertyUrl": "schema:Project" ,
-       "datatype": "boolean"
+       "schema:isPartOfLudeme": "DLPGame",
+       "propertyUrl": "schema:isPartOfLudeme" ,
+       "datatype": "string"
       },
       {
        "@id": "https://w3id.org/ludeme/tableGames.csv/column/PublicGame",
@@ -231,7 +238,7 @@
         "Credit"
        ],
        "ludeme:Credit": "Credit",
-       "propertyUrl": "ludeme:PublicGame",
+       "propertyUrl": "ludeme:CreatorOfLud",
        "datatype": "string"
       },
       {
@@ -250,7 +257,8 @@
        "titles": [
         "BGGId"
        ],
-       "dc:description": "BGGId",
+       "propertyUrl": "ludeme:boardgamegeekID",
+       "valueUrl":"https://boardgamegeek.com/boardgame/{BGGId}",
        "datatype": "string"
       },
       {
@@ -269,42 +277,6 @@
         "EvidenceRange"
        ],
        "dc:description": "EvidenceRange",
-       "datatype": "string"
-      },
-      {
-       "@id": "https://w3id.org/ludeme/tableGames.csv/column/WishlistGame",
-       "name": "WishlistGame",
-       "titles": [
-        "WishlistGame"
-       ],
-       "dc:description": "WishlistGame",
-       "datatype": "string"
-      },
-      {
-       "@id": "https://w3id.org/ludeme/tableGames.csv/column/Notes",
-       "name": "Notes",
-       "titles": [
-        "Notes"
-       ],
-       "dc:description": "Notes",
-       "datatype": "string"
-      },
-      {
-       "@id": "https://w3id.org/ludeme/tableGames.csv/column/HelpUs",
-       "name": "HelpUs",
-       "titles": [
-        "HelpUs"
-       ],
-       "dc:description": "HelpUs",
-       "datatype": "string"
-      },
-      {
-       "@id": "https://w3id.org/ludeme/tableGames.csv/column/ForceRulesetInLud",
-       "name": "ForceRulesetInLud",
-       "titles": [
-        "ForceRulesetInLud"
-       ],
-       "dc:description": "ForceRulesetInLud",
        "datatype": "string"
       }
      ],

@@ -24,7 +24,7 @@ A RDF Knowledge graph for traditional games:
 </p>
 
 
-Concepts and properties are annotated with general ontologies
+Concepts and properties are annotated with general ontologies:
 
 + [Data Model Game table](model/data-model.md) - describes a Game
 + [Data Model Ruleset Regions](model/data-model-regions.md) - describes the rulesets of a Game given geographical regions
@@ -33,28 +33,26 @@ Concepts and properties are annotated with general ontologies
 
 ## 🎲 Data Identification & Argumentation
 
-We link Ludeme dataset to data descriptors from British Museum as following:
+We link Ludeme dataset to data descriptors from the **Digital Collection of the British Museum** as following:
 
-- British Museum:
-  + keyword: game-board
-  + Query database: https://www.britishmuseum.org/collection/search?object=game-board
-  + Download dataset: [collections-22-01-26-10 28 18.csv](data/collections-britishM.csv)    
++ keyword: *game-board*
++ Query database: https://www.britishmuseum.org/collection/search?object=game-board
++ Download dataset: [collections-22-01-26-10 28 18.csv](data/collections-britishM.csv)    
 
+Other sources from digital collection of international museums are *currently* being incorporated:
 
-
-Other sources from Museums to be integrated are currently investigated:
-
-- Louvre Museum:
-  + keyword: plateau de jeu
+- **Louvre Museum**:
+  + keyword: *plateau de jeu*
   + Query database: https://collections.louvre.fr/search/export?q=%22plateau%20de%20jeu%22
   + Download dataset csv format: [Link](https://collections.louvre.fr/recherche?q=%22plateau+de+jeu%22) 
   + Download dataset json format: [Link](https://collections.louvre.fr/search/export?q=%22plateau%20de%20jeu%22) 
-
-- This is the list of API/database links to integrate:
-    + Metropolitan Art Museum: https://github.com/metmuseum/openaccess/blob/master/MetObjects.csv
-    + The British Museum active sparql endpoint https://old.datahub.io/dataset/british-museum-collection or collection.britishmuseum.org/sparql
+- **Metropolitan Art Museum**: 
+    - Download dataset csv format: https://github.com/metmuseum/openaccess/blob/master/MetObjects.csv
 
 
+
+
+See the ongoing [scripts](etl) and [notebooks](notebooks) using python.
 
 
 ## ♠️ Install locally
@@ -69,13 +67,12 @@ pip install cow-csvw
 
 ## 🐮 Run CoW
 
-- **Inputs** to `./data`:
-
+- The **Inputs CSV files** are in `./data`:
   + [data/tableGames.csv](data/tableGames.csv)
   + [data/rulesetRegions.csv](data/rulesetRegions.csv)
   + [data/rulesetPeriods.csv](data/rulesetPeriods.csv)
-
-- Generate the metadata file with CSVw mappings:
+  
+- Generate the **metadata file** with CSVw mappings:
 
 ```powershell
 cow_tool build data/tableGames.csv
@@ -85,13 +82,10 @@ cow_tool build data/tableGames.csv
 
   * Change the base URI to w3id.org/ludeme
   * Add `propertyUrl` to map to our predicates (cf. https://www.w3.org/TR/tabular-data-primer/#property-names)
-
-- **Generated JSON** Skeleton Schema in `./data`:
+- You can check our **JSON** Skeleton Schema in `./data`:
   + [tableGames.csv-metadata.json](data/tableGames.csv-metadata.json)
   + [rulesetRegions.csv-metadata.json](data/rulesetRegions.csv-metadata.json)
   + [rulesetPeriods.csv-metadata.json](data/rulesetPeriods.csv-metadata.json)
-
-
 
 - Run the CSVw mappings to generate RDF:
 
@@ -100,7 +94,7 @@ cow_tool build data/tableGames.csv
 cow_tool convert data/tableGames.csv
 ```
 
-- **Outputs** RDF files:
+- The **Outputs RDF files** are in `./data`:
 
   + [data/tableGames.csv.nq](data/tableGames.csv.nq)
   + [data/rulesetRegions.csv.nq](data/rulesetRegions.csv.nq)

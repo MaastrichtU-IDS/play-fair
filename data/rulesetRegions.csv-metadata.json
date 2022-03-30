@@ -19,8 +19,8 @@
       "ecpo": "http://purl.org/ontology/ecpo#",
       "foaf": "http://xmlns.com/foaf/0.1/",
       "frbr": "http://purl.org/spar/frbr/core#",
-      "geo": "http://www.opengis.net/ont/geosparql#",
-      "geonames": "http://www.geonames.org/ontology#",
+      "geo": "http://www.opengis.net/ont/geosparql",
+      "geonames": "http://www.geonames.org/ontology",
       "gvp": "http://vocab.getty.edu/ontology#'",
       "juso": "http://http://rdfs.co/juso/",
       "lemon": "http://lemon-model.net/lemon#",
@@ -42,7 +42,7 @@
       "time": "http://www.w3.org/2006/time#",
       "ulan": "http://vocab.getty.edu/ulan/",
       "wgs84": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-      "wiki": "http://www.wikidata.org/entity/#" ,
+      "wiki": "http://www.wikidata.org/entity/" ,
       "xml": "http://www.w3.org/XML/1998/namespace/",
       "xsd": "http://www.w3.org/2001/XMLSchema#"
      }
@@ -200,8 +200,9 @@
         "Eastern Asia"
        ],
        "geonames:7729894": "Eastern Asia",
+       "aboutUrl": "{Eastern Asia}",
        "propertyUrl": "geonames:7729894",
-       "datatype": "boolean"
+       "valueUrl": "{% if 'Eastern Asia' == 0 %}{% else %}Eastern Asia{% endif %}"
       },
       {
        "@id": "https://iisg.amsterdam/rulesetRegions.csv/column/Southeastern_Asia",
@@ -301,6 +302,7 @@
        ],
        "geonames:7729899": "Melanesia",
        "propertyUrl": "geonames:7729899",
+       "valueUrl": "{% if Melanesia == 0 %}{% else %}Melanesia{% endif %}",
        "datatype": "boolean"
       },
       {
@@ -321,6 +323,7 @@
        ],
        "geonames:7729901": "Polynesia",
        "propertyUrl": "geonames:7729901",
+       "valueUrl": "{% if Polynesia == 0 %}{% else %}Polynesia{% endif %}",
        "datatype": "boolean"
       }
      ],

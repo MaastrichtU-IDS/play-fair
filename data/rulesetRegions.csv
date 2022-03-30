@@ -1,5 +1,5 @@
 GameId,RulesetId,GameName,RulesetName,Eastern Africa,Middle Africa,Northern Africa,Southern Africa,Western Africa,Central America,Northern America,South America,Central Asia,Northern Asia,Eastern Asia,Southeastern Asia,Southern Asia,Western Asia,Australia and New Zealand,Caribbean,Eastern Europe,Northern Europe,Southern Europe,Western Europe,Melanesia,Micronesia,Polynesia
-1441,1656,1D_Chess,Default,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1441,1656,1D_Chess,Default,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
 7,35,20_Squares,Seleucid,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
 1233,1391,3D_Tic-Tac-Toe,Default,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 8,36,58_Holes,Carnarvon_and_Carter,0,0,1,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0
