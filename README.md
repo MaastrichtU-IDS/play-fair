@@ -1,22 +1,23 @@
 
-# FAIR Data for Traditional Games
+# ♟️ FAIR Data for Traditional Games
 
 A RDF Knowledge graph for traditional games:
 
-  + This is a repo for [CLARIAH Fellowship Call 2021](https://www.clariah.nl/news/clariah-fellowship-call-2021)
+* This is a repo for [CLARIAH Fellowship Call 2021](https://www.clariah.nl/news/clariah-fellowship-call-2021)
 
-+ [Proposal Accepted](files/CLARIAH-F-2021_paper.pdf)
+* [Proposal Accepted](files/CLARIAH-F-2021_paper.pdf)
 
-+ More info [E-Data & Research Article](https://edata.nl/2022/01/31/historische-spelletjesdatabase-in-de-maak/)
+* [DARIAH202 Conference Paper](files/play_fair_dariah.pdf)
+
+* More info [E-Data & Research Article](https://edata.nl/2022/01/31/historische-spelletjesdatabase-in-de-maak/)
 
 ---
 
-## Objective
-
+## 🎯 Objective
 
 > To make traditional games data Interoperable (the I in FAIR)
 
-## PLAY-FAIR Data Model
+## 🧑‍💻 PLAY-FAIR Data Model
 
 <p align="center"> 
 	<img src="images/data-model.PNG"> 
@@ -30,7 +31,7 @@ Concepts and properties are annotated with general ontologies
 + [Data Model Ruleset Periods](model/data-model-periods.md) - describes the rulesets of a Game given historical periods
 
 
-## Data Identification & Argumentation
+## 🎲 Data Identification & Argumentation
 
 We link Ludeme dataset to data descriptors from British Museum as following:
 
@@ -56,7 +57,7 @@ Other sources from Museums to be integrated are currently investigated:
 
 
 
-## Install locally
+## ♠️ Install locally
 
 Install dependencies:
 
@@ -66,7 +67,7 @@ wget https://github.com/RMLio/rmlmapper-java/releases/download/v4.12.0/rmlmapper
 pip install cow-csvw
 ```
 
-## Run CoW
+## 🐮 Run CoW
 
 - **Inputs** to `./data`:
 
@@ -108,7 +109,7 @@ cow_tool convert data/tableGames.csv
 
 
 
-## RDF files to Druid
+## 🪄 RDF files to Druid
 
 - **Graphs**:
 
