@@ -139,7 +139,7 @@
         "LudiiRuleset"
        ],
        "propertyUrl": "schema:gameItem",
-       "valueUrl": "https://w3id.org/ludeme/ruleset/{MainRuleset}",
+       "valueUrl": "https://w3id.org/ludeme/ruleset/id/{MainRuleset}",
        "datatype": "integer"
       },
       {

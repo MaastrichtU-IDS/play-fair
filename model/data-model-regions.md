@@ -1,27 +1,8 @@
 ### Example RDF (turtle):
 
 ```ttl
-@prefix : <http://mapping.example.com/> .
-@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
-@prefix fno: <https://w3id.org/function/ontology#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
-@prefix idlab: <http://example.com/idlab/function/> .
-@prefix idsf: <https://w3id.org/um/ids/rmlfunctions.ttl#> .
 @prefix ludeme: <https://w3id.org/ludeme/> .
-@prefix ludii: <https://w3id.org/ludeme/ontology/#> .
-@prefix pubmed: <https://identifiers.org/pubmed:> .
-@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
-@prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix schema: <https://schema.org/> .
-@prefix sio: <http://semanticscience.org/resource/> .
-@prefix void: <http://rdfs.org/ns/void#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix wiki: <http://www.wikidata.org/entity/> .
 @prefix geonames: <http://www.geonames.org/ontology#> 
@@ -69,5 +50,4 @@
     geonames:7729899 "0"^^xsd:boolean ; #Melanesia
     geonames:7729900 "0"^^xsd:boolean ; #Micronesia
     geonames:7729901 "0"^^xsd:boolean . #Polynesia
-
 ```
