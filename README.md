@@ -7,7 +7,7 @@ A RDF Knowledge graph for traditional games:
 
 * [Proposal Accepted](files/CLARIAH-F-2021_paper.pdf)
 
-* [DARIAH202 Conference Paper](files/play_fair_dariah.pdf)
+* [DARIAH2022 Conference Paper-In prep](files/play_fair_dariah.pdf)
 
 * More info [E-Data & Research Article](https://edata.nl/2022/01/31/historische-spelletjesdatabase-in-de-maak/)
 
