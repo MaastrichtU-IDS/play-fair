@@ -1,5 +1,5 @@
 ### RDF for description of a game: senet and object details
-This module describes the data element of a game (e.g "Senet"). These elements, defined by the Ludeme project, can be found on the [Structure of Game Table](https://ludii.games/downloads/DLP_Database_Guide.pdf) and the dataset in [this link](data/tableGames.csv).
+This module describes the data element of a game (e.g "Senet"). These elements, defined by the Ludeme project, can be found on the [Structure of Game Table](https://ludii.games/downloads/DLP_Database_Guide.pdf) and the dataset in [this link](../data/tableGames.csv).
 
 ```ttl
 @prefix : <http://mapping.example.com/> .
