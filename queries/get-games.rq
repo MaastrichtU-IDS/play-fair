@@ -11,5 +11,6 @@ SELECT * WHERE {
   	rdfs:label ?label ;
   	schema:countryOfOrigin ?Origin .
   ?rules rdfs:defines ?game .
- #FILTER contains(LCASE(?label), "senet")
+
+ FILTER contains(LCASE(?label), "senet")
 } LIMIT 1000

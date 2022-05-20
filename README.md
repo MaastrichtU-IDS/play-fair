@@ -24,7 +24,7 @@ A RDF Knowledge graph for traditional games:
 </p>
 
 
-Concepts and properties are annotated with general ontologies:
+Concepts and properties are annotated with general (e.g. Schema.org or wikipedia) and dedicated digital humanities (e.g. getty) ontologies:
 
 + [Data Model Game table](model/data-model.md) - describes a Game
 + [Data Model Ruleset Regions](model/data-model-regions.md) - describes the rulesets of a Game given geographical regions
