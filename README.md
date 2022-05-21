@@ -107,7 +107,7 @@ cow_tool convert data/tableGames.csv
 
 - **Graphs**:
 
-  + [Datasets not publicly available yet][https://druid.datalegend.net/UtrillaGuerreroC/Ludeme/]
+  + [Datasets not publicly available yet](https://druid.datalegend.net/UtrillaGuerreroC/Ludeme/)
 
 
 - **Services**:
