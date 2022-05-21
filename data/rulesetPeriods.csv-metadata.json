@@ -224,7 +224,7 @@
     "datatype": "string"
    }
   ],
-  "primaryKey": "GameId",
-  "aboutUrl": "{_row}"
+  "primaryKey": "RulesetId",
+  "aboutUrl": "{RulesetId}"
  }
 }

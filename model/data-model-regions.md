@@ -2,24 +2,28 @@
 
 ```ttl
 @prefix ludeme: <https://w3id.org/ludeme/> .
+@prefix ludii: <https://w3id.org/ludeme/ontology/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix wiki: <http://www.wikidata.org/entity/> .
+@prefix getty: <http://vocab.getty.edu/aat/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wiki: <https://www.wikidata.org/wiki/> .
+@prefix british: <https://www.britishmuseum.org/> .
+@prefix louvre: <https://collections.louvre.fr/en/ark:> .
 @prefix geonames: <http://www.geonames.org/ontology#> 
 
 
 # rdf syntax generated manually:
-# <https://w3id.org/ludeme/game/3> a schema:Game;
-#   dc:description "Senet is one of the oldest board games known in the world, documented from about 3000 BCE until the first millennium BCE in Egypt. It was also played In Cyprus for most of that time, and played at different times in the Levant. Though a full ruleset has never been found, hints from texts and tomb paintings in Egypt give us clues about the manner in which it was likely played. The game was also heavily imbued with religious significance, as the board itself represented the journey through the afterlife.";
-#   rdfs:label "Senet" .
 
 ## From Table 1: Structure of Game Table https://ludii.games/downloads/DLP_Database_Guide.pdf
 
 
 # rdf for description of a game: senet and object details
-<https://ludii.games/identifier.php?Id=DLP.Games.3> a schema:Game ; # https://ludii.games/details.php?keyword=Senet
+<https://ludii.games/identifier.php?Id=DLP.Games.3> a schema:Game ; 
    schema:DiscoverAction "https://schema.org/DiscoverAction" ;
-    dcterms:object "http://vocab.getty.edu/aat/300222752" ; #related vocabularies for game object or wiki: https://www.wikidata.org/wiki/Q131436
+    schema:sameAs "http://vocab.getty.edu/aat/300217912" ;
     rdfs:label "Senet" ; #GameName
     schema:identifier "3" ; #Gameid
     schema:additionalProperty :_MainRuleset .
@@ -35,7 +39,7 @@
     geonames:7729892 "0"^^xsd:boolean ; # Central America
     geonames:7729890 "0"^^xsd:boolean ;# Northern America
     geonames:6255150 "0"^^xsd:boolean ; # South America
-    geonames:7729893 "0"^^xsd:boolean ;# Central Asia
+    geonames:7729893 "0"^^xsd:boolean ; # Central Asia
     wiki:Q27329 "0"^^xsd:boolean ; #Northern Asia !!!!
     geonames:7729894 "0"^^xsd:boolean ; #Eastern Asia
     geonames:7729896 "0"^^xsd:boolean ; #Southeastern Asia

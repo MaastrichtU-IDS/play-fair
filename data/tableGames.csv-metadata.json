@@ -169,7 +169,7 @@
         "DLPGame"
        ],
        "schema:isPartOfLudeme": "DLPGame",
-       "propertyUrl": "schema:isPartOfLudeme" ,
+       "propertyUrl": "ludeme:isPartOfDLP" ,
        "datatype": "string"
       },
       {
@@ -223,15 +223,6 @@
        "datatype": "date"
       },
       {
-       "@id": "https://w3id.org/ludeme/tableGames.csv/column/ProprietaryGame",
-       "name": "ProprietaryGame",
-       "titles": [
-        "ProprietaryGame"
-       ],
-       "dc:description": "ProprietaryGame",
-       "datatype": "string"
-      },
-      {
        "@id": "https://w3id.org/ludeme/tableGames.csv/column/Credit",
        "name": "Credit",
        "titles": [
@@ -276,8 +267,8 @@
        "titles": [
         "EvidenceRange"
        ],
-       "dc:description": "EvidenceRange",
-       "datatype": "string"
+       "propertyUrl": "ludeme:EvidenceRange",
+       "datatype": "float"
       }
      ],
      "primaryKey": "Id",

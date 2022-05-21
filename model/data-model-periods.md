@@ -12,9 +12,9 @@
 
 
 # rdf for description of a game: senet and object details
-<https://ludii.games/identifier.php?Id=DLP.Games.3> a schema:Game ; # https://ludii.games/details.php?keyword=Senet
+<https://ludii.games/identifier.php?Id=DLP.Games.3> a schema:Game ; 
    schema:DiscoverAction "https://schema.org/DiscoverAction" ;
-    dcterms:object "http://vocab.getty.edu/aat/300222752" ; #related vocabularies for game object or wiki: https://www.wikidata.org/wiki/Q131436
+    schema:sameAs "http://vocab.getty.edu/aat/300217912" ;
     rdfs:label "Senet" ; #GameName
     schema:identifier "3" ; #Gameid
     schema:additionalProperty :_MainRuleset .
@@ -23,9 +23,9 @@
     schema:identifier "529" ; #RulesetId
     dc:description " Played on a 3x10 board. Pieces can be five or seven in number. Two players. Four casting sticks used as dice. Boustrophedon track from top left to bottom right. " ; #summary #description
     ludeme:Ancient "0"^^xsd:boolean ;
-        schema:sameAs wiki:Q435608 ; #ancient history
+        schema:sameAs wiki:Q41493 ; #ancient history
     ludeme:Medieval "0"^^xsd:boolean ;
-        schema:sameAs wiki:Q12554 ; #Medieval history
+        schema:sameAs wiki:Q27992545 ; #Medieval history
     ludeme:Modern "0"^^xsd:boolean ;
         schema:sameAs wiki:Q3281534 ; #Modern history
     ludeme:VeryEarlyMedieval "0"^^xsd:boolean ;
@@ -44,6 +44,6 @@
     ludeme:1900s "0"^^xsd:boolean ;
         schema:sameAs wiki:Q36574 ; 
     ludeme:2000s "0"^^xsd:boolean ;
-        schema:sameAs wiki:Q35024 ; 
+        schema:sameAs wiki:Q35024 .
          
 ```
