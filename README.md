@@ -20,15 +20,16 @@ A RDF Knowledge graph for traditional games:
 ## 🧑‍💻 PLAY-FAIR Data Model
 
 <p align="center"> 
-	<img src="images/data-model.PNG"> 
+	<img src="images/data-model.svg"> 
 </p>
 
 
-Concepts and properties are annotated with general (e.g. Schema.org or wikipedia) and dedicated digital humanities (e.g. getty) ontologies:
+Concepts and properties are annotated with general (e.g. Schema.org, Dublin Core or wikipedia) and dedicated digital humanities (e.g. getty) ontologies:
 
 + [Data Model Game table](model/data-model.md) - describes a Game
 + [Data Model Ruleset Regions](model/data-model-regions.md) - describes the rulesets of a Game given geographical regions
 + [Data Model Ruleset Periods](model/data-model-periods.md) - describes the rulesets of a Game given historical periods
+
 
 
 ## 🎲 Data Identification & Argumentation
@@ -45,10 +46,6 @@ Other sources from digital collection of international museums are *currently* b
   + keyword: *plateau de jeu*
   + Query database: https://collections.louvre.fr/search/export?q=%22plateau%20de%20jeu%22
   + Download dataset csv format: [Link](https://collections.louvre.fr/recherche?q=%22plateau+de+jeu%22) 
-  + Download dataset json format: [Link](https://collections.louvre.fr/search/export?q=%22plateau%20de%20jeu%22) 
-- **Metropolitan Art Museum**: 
-    - Download dataset csv format: https://github.com/metmuseum/openaccess/blob/master/MetObjects.csv
-
 
 
 
@@ -107,12 +104,12 @@ cow_tool convert data/tableGames.csv
 
 - **Graphs**:
 
-  + [Datasets not publicly available yet](https://druid.datalegend.net/UtrillaGuerreroC/Ludeme/)
+  + Datasets publicly available here: [https://druid.datalegend.net/UtrillaGuerreroC/fair-coffee](https://druid.datalegend.net/UtrillaGuerreroC/fair-coffee)
 
 
 - **Services**:
 
-  + The SPARQL endpoint is accessible at [https://druid.datalegend.net/UtrillaGuerreroC/Ludeme/sparql/Ludeme](https://druid.datalegend.net/UtrillaGuerreroC/Ludeme/sparql/Ludeme)
+  + The SPARQL endpoint is accessible at [https://druid.datalegend.net/UtrillaGuerreroC/fair-coffee/sparql/fair-coffee](https://druid.datalegend.net/UtrillaGuerreroC/fair-coffee/sparql/fair-coffee)
 
 
 - **Check the SPARQL queries**
@@ -122,70 +119,7 @@ Queries from the grlc API can be checked and changed in the .rq files.
   * Examples:
         - [Get Games](queries/get-games.rq)
         - [Get images](queries/get-games-images.rq)
-
-
----
-
-### Run RML mapper
-
-```powershell
-cd etl
-.\run.ps1
-```
-
-
-### Start workspace
-
-Start the workspace to run mappings to convert Ludeme data to RDF on DSRI:
-
-```bash
-oc new-app vscode-root -p APPLICATION_NAME=vscode \
-  -p GIT_URL=https://github.com/MaastrichtU-IDS/play-fair \
-  -p STORAGE_SIZE=10Gi \
-  -p PASSWORD=CHANGEME
-```
-
-Delete the VSCode on DSRI:
-
-```bash
-oc delete all,secret,pvc,configmaps,serviceaccount,rolebinding --selector app=vscode
-```
-
-To run locally, you can use docker, run this command in the folder you want to see in the VSCode interface (the root of this repository):
-
-```bash
-docker run --rm -it -p 8080:8080 -e PASSWORD=password -e GIT_URL= -v $(pwd):/home/coder/project ghcr.io/maastrichtu-ids/code-server:latest
-```
-
-### Start database
-
-Install MySQL with Helm:
-
-```bash
-helm repo add bitnami https://charts.bitnami.com/bitnami
-helm repo update
-```
-
-Deploy MySQL in your DSRI project, this will automatically load the `ludiiGames` database, using the `values.yaml` file in this repository (feel free to adapt it for a different database):
-
-```bash
-helm install mysql bitnami/mysql -f mysql-helm-values.yaml
-```
-
-Forward the service to access it on your laptop at http://localhost:3306
-
-```bash
-oc port-forward svc/mysql 3306
-```
-
-You can now use your favorite tool to connect and explore the database, if you don't know which one to use we recommend to use the database administration tool [DBeaver](https://dbeaver.io/).
-
-Delete MySQL deployment:
-
-```bash
-helm uninstall mysql
-```
-
+        - [Get network](queries/get-network.rq)
 
 ### Website
 
