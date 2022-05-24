@@ -116,10 +116,10 @@ cow_tool convert data/tableGames.csv
 
 Queries from the grlc API can be checked and changed in the .rq files.
     
-  * Examples:
-        - [Get Games](queries/get-games.rq)
-        - [Get images](queries/get-games-images.rq)
-        - [Get network](queries/get-network.rq)
+* Examples:
+- [Get Games](queries/get-games.rq)
+- [Get images](queries/get-games-images.rq)
+- [Get network](queries/get-network.rq)
 
 ### Website
 
