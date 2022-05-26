@@ -62,13 +62,11 @@ wget https://github.com/RMLio/rmlmapper-java/releases/download/v4.12.0/rmlmapper
 pip install cow-csvw
 ```
 
-## 🐮 Run CoW
+## 🐮 Run CoW for `Game` level:
 
-- The **Inputs CSV files** are in `./data`:
+- The **Input CSV file** is in `./data`:
   + [data/tableGames.csv](data/tableGames.csv)
-  + [data/rulesetRegions.csv](data/rulesetRegions.csv)
-  + [data/rulesetPeriods.csv](data/rulesetPeriods.csv)
-  
+
 - Generate the **metadata file** with CSVw mappings:
 
 ```powershell
@@ -81,8 +79,6 @@ cow_tool build data/tableGames.csv
   * Add `propertyUrl` to map to our predicates (cf. https://www.w3.org/TR/tabular-data-primer/#property-names)
 - You can check our **JSON** Skeleton Schema in `./data`:
   + [tableGames.csv-metadata.json](data/tableGames.csv-metadata.json)
-  + [rulesetRegions.csv-metadata.json](data/rulesetRegions.csv-metadata.json)
-  + [rulesetPeriods.csv-metadata.json](data/rulesetPeriods.csv-metadata.json)
 
 - Run the CSVw mappings to generate RDF:
 
@@ -91,25 +87,36 @@ cow_tool build data/tableGames.csv
 cow_tool convert data/tableGames.csv
 ```
 
-- The **Outputs RDF files** are in `./data`:
+- The **Output RDF file** is in `./data`:
 
   + [data/tableGames.csv.nq](data/tableGames.csv.nq)
+
+
+## 🪄 **Convert spreadsheets to Linked Data for `Ruleset` level**
+
+- The **Inputs CSV files** are in `./data`:
+  + [data/rulesetRegions.csv](data/rulesetRegions.csv)
+  + [data/rulesetPeriods.csv](data/rulesetPeriods.csv)
+
+- Follow the instructions given here:
+  + [https://humanities.wizard.semanticscience.org/](https://humanities.wizard.semanticscience.org/)
+
+- The **Outputs RDF file** are in `./data`:
+
   + [data/rulesetRegions.csv.nq](data/rulesetRegions.csv.nq)
   + [data/rulesetPeriods.csv.nq](data/rulesetPeriods.csv.nq)
-
-
 
 
 ## 🪄 RDF files to Druid
 
 - **Graphs**:
 
-  + Datasets publicly available here: [https://druid.datalegend.net/UtrillaGuerreroC/fair-coffee](https://druid.datalegend.net/UtrillaGuerreroC/fair-coffee)
+  + Datasets publicly available here: [https://druid.datalegend.net/UtrillaGuerreroC/playfair](https://druid.datalegend.net/UtrillaGuerreroC/playfair)
 
 
 - **Services**:
 
-  + The SPARQL endpoint is accessible at [https://druid.datalegend.net/UtrillaGuerreroC/fair-coffee/sparql/fair-coffee](https://druid.datalegend.net/UtrillaGuerreroC/fair-coffee/sparql/fair-coffee)
+  + The SPARQL endpoint is accessible at [https://druid.datalegend.net/UtrillaGuerreroC/playfair/sparql/playfairKG](https://druid.datalegend.net/UtrillaGuerreroC/playfair/sparql/playfairKG)
 
 
 - **Check the SPARQL queries**

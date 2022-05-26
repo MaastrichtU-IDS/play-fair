@@ -90,7 +90,7 @@
        "dc:description": "Id",
        "datatype": "integer",
        "propertyUrl":"schema:identifier",
-       "valueUrl": "DLP.Games.{Id}"
+       "valueUrl": "https://www.ludii.games/concepts.php?gameId={Id}"
       },
       {
        "@id": "https://w3id.org/ludeme/tableGames.csv/column/Name",

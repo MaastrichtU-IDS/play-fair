@@ -8,9 +8,10 @@ PREFIX dc: <http://purl.org/dc/terms/>
 
 SELECT * WHERE {
   ?game a schemas:Game ;
-  	rdfs:label ?label ;
-  	schema:countryOfOrigin ?Origin .
-  ?rules rdfs:defines ?game .
+  	#rdfs:label ?label ;
+  	rdfs:label ?Name ;
+    schema:alternateName ?origin .
+  ?rules schema:isPartOf ?game .
 
- FILTER contains(LCASE(?label), "senet")
-} LIMIT 1000
+ FILTER contains(LCASE(?Name), "senet")
+} LIMIT 50
