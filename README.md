@@ -9,6 +9,8 @@ A RDF Knowledge graph for traditional games:
 
 * [DARIAH2022 Conference Paper-In prep](files/play_fair_dariah.pdf)
 
+* Data Stories [PLAYFAIR-KG data storytelling](https://druid.datalegend.net/UtrillaGuerreroC/-/stories/PLAYFAIR)
+
 * More info [E-Data & Research Article](https://edata.nl/2022/01/31/historische-spelletjesdatabase-in-de-maak/)
 
 ---
