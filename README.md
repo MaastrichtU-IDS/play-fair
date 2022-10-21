@@ -132,7 +132,7 @@ Queries from the grlc API can be checked and changed in the .rq files.
 
 ### Website
 
-Want to learn more? Check out [PLAYFAIR Website!](https://www.clariah.nl/projects?page=2/)
+Want to learn more? Check out [PLAYFAIR Website!](https://www.clariah.nl/nl/projecten/fair-data-for-historical-games)
 
 ---
 
